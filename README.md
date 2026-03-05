@@ -28,6 +28,7 @@ Examples include:
 - commonly used ROS 2 CLI commands
 - troubleshooting logs
 
+
 ### week
 
 Weekly learning records from the course.
@@ -36,6 +37,7 @@ The course runs three sessions per week for approximately fifteen weeks.
 Each week contains notes and small practice code used during class.
 
 This directory is used to track the learning process and summarize key concepts covered in the lectures.
+
 
 ### src
 
