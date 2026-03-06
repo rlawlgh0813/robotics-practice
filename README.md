@@ -39,6 +39,7 @@ Each week contains notes and small practice code used during class.
 This directory is used to track the learning process and summarize key concepts covered in the lectures.
 
 
+// remove
 ### src
 
 Source code developed during the course.
