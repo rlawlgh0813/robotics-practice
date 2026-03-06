@@ -1,0 +1,25 @@
+[0.255s] Invoking command in '/home/ssu/robotics-practice/week/week01/my_pubsub/src/my_pubsub': PYTHONPATH=/home/ssu/robotics-practice/week/week01/my_pubsub/build/my_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/week/week01/my_pubsub/install/my_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_pubsub build --build-base /home/ssu/robotics-practice/week/week01/my_pubsub/build/my_pubsub/build install --record /home/ssu/robotics-practice/week/week01/my_pubsub/build/my_pubsub/install.log --single-version-externally-managed install_data
+[0.351s] running egg_info
+[0.351s] writing ../../build/my_pubsub/my_pubsub.egg-info/PKG-INFO
+[0.351s] writing dependency_links to ../../build/my_pubsub/my_pubsub.egg-info/dependency_links.txt
+[0.351s] writing entry points to ../../build/my_pubsub/my_pubsub.egg-info/entry_points.txt
+[0.351s] writing requirements to ../../build/my_pubsub/my_pubsub.egg-info/requires.txt
+[0.351s] writing top-level names to ../../build/my_pubsub/my_pubsub.egg-info/top_level.txt
+[0.352s] reading manifest file '../../build/my_pubsub/my_pubsub.egg-info/SOURCES.txt'
+[0.353s] writing manifest file '../../build/my_pubsub/my_pubsub.egg-info/SOURCES.txt'
+[0.353s] running build
+[0.353s] running build_py
+[0.353s] copying my_pubsub/my_pub.py -> /home/ssu/robotics-practice/week/week01/my_pubsub/build/my_pubsub/build/lib/my_pubsub
+[0.353s] running install
+[0.353s] running install_lib
+[0.353s] copying /home/ssu/robotics-practice/week/week01/my_pubsub/build/my_pubsub/build/lib/my_pubsub/my_pub.py -> /home/ssu/robotics-practice/week/week01/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub
+[0.354s] byte-compiling /home/ssu/robotics-practice/week/week01/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/my_pub.py to my_pub.cpython-310.pyc
+[0.354s] running install_data
+[0.354s] running install_egg_info
+[0.354s] removing '/home/ssu/robotics-practice/week/week01/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub-0.0.0-py3.10.egg-info' (and everything under it)
+[0.354s] Copying ../../build/my_pubsub/my_pubsub.egg-info to /home/ssu/robotics-practice/week/week01/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub-0.0.0-py3.10.egg-info
+[0.355s] running install_scripts
+[0.363s] Installing listener script to /home/ssu/robotics-practice/week/week01/my_pubsub/install/my_pubsub/lib/my_pubsub
+[0.363s] Installing talker script to /home/ssu/robotics-practice/week/week01/my_pubsub/install/my_pubsub/lib/my_pubsub
+[0.364s] writing list of installed files to '/home/ssu/robotics-practice/week/week01/my_pubsub/build/my_pubsub/install.log'
+[0.375s] Invoked command in '/home/ssu/robotics-practice/week/week01/my_pubsub/src/my_pubsub' returned '0': PYTHONPATH=/home/ssu/robotics-practice/week/week01/my_pubsub/build/my_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/week/week01/my_pubsub/install/my_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_pubsub build --build-base /home/ssu/robotics-practice/week/week01/my_pubsub/build/my_pubsub/build install --record /home/ssu/robotics-practice/week/week01/my_pubsub/build/my_pubsub/install.log --single-version-externally-managed install_data

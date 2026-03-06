@@ -1,0 +1,5 @@
+  File "/home/ssu/robotics-practice/week/week01/my_pubsub/install/my_pubsub/lib/python3.10/site-packages/my_pubsub/my_pub.py", line 18
+    self.get_logger().info('Publishing: "%s"' % msg.data
+                          ^
+SyntaxError: '(' was never closed
+

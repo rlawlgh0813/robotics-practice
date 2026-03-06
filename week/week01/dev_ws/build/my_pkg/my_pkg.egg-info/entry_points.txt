@@ -1,0 +1,3 @@
+[console_scripts]
+turtlesim_topic_goal_follower = my_pkg.turtlesim_topic_goal_follower:main
+
