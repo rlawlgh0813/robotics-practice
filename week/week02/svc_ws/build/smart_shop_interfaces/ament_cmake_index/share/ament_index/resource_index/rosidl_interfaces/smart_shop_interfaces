@@ -1,0 +1,16 @@
+srv/AuthorizePayment.idl
+srv/AuthorizePayment.srv
+srv/AuthorizePayment_Request.msg
+srv/AuthorizePayment_Response.msg
+srv/CheckStock.idl
+srv/CheckStock.srv
+srv/CheckStock_Request.msg
+srv/CheckStock_Response.msg
+srv/DiscountApply.idl
+srv/DiscountApply.srv
+srv/DiscountApply_Request.msg
+srv/DiscountApply_Response.msg
+srv/PlaceOrder.idl
+srv/PlaceOrder.srv
+srv/PlaceOrder_Request.msg
+srv/PlaceOrder_Response.msg

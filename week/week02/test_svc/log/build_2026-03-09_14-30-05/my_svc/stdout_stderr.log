@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/my_svc/my_svc.egg-info
+writing ../../build/my_svc/my_svc.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_svc/my_svc.egg-info/dependency_links.txt
+writing entry points to ../../build/my_svc/my_svc.egg-info/entry_points.txt
+writing requirements to ../../build/my_svc/my_svc.egg-info/requires.txt
+writing top-level names to ../../build/my_svc/my_svc.egg-info/top_level.txt
+writing manifest file '../../build/my_svc/my_svc.egg-info/SOURCES.txt'
+reading manifest file '../../build/my_svc/my_svc.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_svc/my_svc.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ssu/robotics-practice/week/week02/test_svc/build/my_svc/build
+creating /home/ssu/robotics-practice/week/week02/test_svc/build/my_svc/build/lib
+creating /home/ssu/robotics-practice/week/week02/test_svc/build/my_svc/build/lib/my_svc
+copying my_svc/__init__.py -> /home/ssu/robotics-practice/week/week02/test_svc/build/my_svc/build/lib/my_svc
+copying my_svc/my_service.py -> /home/ssu/robotics-practice/week/week02/test_svc/build/my_svc/build/lib/my_svc
+copying my_svc/my_client.py -> /home/ssu/robotics-practice/week/week02/test_svc/build/my_svc/build/lib/my_svc
+running install
+running install_lib
+creating /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/lib/python3.10/site-packages/my_svc
+copying /home/ssu/robotics-practice/week/week02/test_svc/build/my_svc/build/lib/my_svc/__init__.py -> /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/lib/python3.10/site-packages/my_svc
+copying /home/ssu/robotics-practice/week/week02/test_svc/build/my_svc/build/lib/my_svc/my_service.py -> /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/lib/python3.10/site-packages/my_svc
+copying /home/ssu/robotics-practice/week/week02/test_svc/build/my_svc/build/lib/my_svc/my_client.py -> /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/lib/python3.10/site-packages/my_svc
+byte-compiling /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/lib/python3.10/site-packages/my_svc/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/lib/python3.10/site-packages/my_svc/my_service.py to my_service.cpython-310.pyc
+byte-compiling /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/lib/python3.10/site-packages/my_svc/my_client.py to my_client.cpython-310.pyc
+running install_data
+creating /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/share/ament_index
+creating /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/share/ament_index/resource_index
+creating /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/share/ament_index/resource_index/packages
+copying resource/my_svc -> /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/share/ament_index/resource_index/packages
+copying package.xml -> /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/share/my_svc
+running install_egg_info
+Copying ../../build/my_svc/my_svc.egg-info to /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/lib/python3.10/site-packages/my_svc-0.0.0-py3.10.egg-info
+running install_scripts
+Installing client script to /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/lib/my_svc
+Installing service script to /home/ssu/robotics-practice/week/week02/test_svc/install/my_svc/lib/my_svc
+writing list of installed files to '/home/ssu/robotics-practice/week/week02/test_svc/build/my_svc/install.log'

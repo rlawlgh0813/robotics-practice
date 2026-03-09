@@ -1,0 +1,7 @@
+[console_scripts]
+discount_server = smart_shop_nodes.discount_server:main
+order_client = smart_shop_nodes.order_client:main
+order_manager = smart_shop_nodes.order_manager:main
+payment_server = smart_shop_nodes.payment_server:main
+stock_server = smart_shop_nodes.stock_server:main
+

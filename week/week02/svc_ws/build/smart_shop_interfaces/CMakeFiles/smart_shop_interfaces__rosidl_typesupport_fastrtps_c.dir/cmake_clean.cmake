@@ -1,0 +1,25 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support_c.cpp.o"
+  "CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support_c.cpp.o.d"
+  "CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/check_stock__type_support_c.cpp.o"
+  "CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/check_stock__type_support_c.cpp.o.d"
+  "CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/discount_apply__type_support_c.cpp.o"
+  "CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/discount_apply__type_support_c.cpp.o.d"
+  "CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/place_order__type_support_c.cpp.o"
+  "CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/place_order__type_support_c.cpp.o.d"
+  "libsmart_shop_interfaces__rosidl_typesupport_fastrtps_c.pdb"
+  "libsmart_shop_interfaces__rosidl_typesupport_fastrtps_c.so"
+  "rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/authorize_payment__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/check_stock__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/check_stock__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/discount_apply__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/discount_apply__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/place_order__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/place_order__type_support_c.cpp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

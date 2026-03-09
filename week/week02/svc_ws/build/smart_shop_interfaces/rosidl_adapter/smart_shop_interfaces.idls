@@ -1,0 +1,4 @@
+/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:srv/CheckStock.idl
+/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:srv/AuthorizePayment.idl
+/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:srv/PlaceOrder.idl
+/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:srv/DiscountApply.idl

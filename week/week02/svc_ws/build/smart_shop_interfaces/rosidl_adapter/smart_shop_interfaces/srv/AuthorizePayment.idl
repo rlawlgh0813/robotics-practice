@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from smart_shop_interfaces/srv/AuthorizePayment.srv
+// generated code does not contain a copyright notice
+
+
+module smart_shop_interfaces {
+  module srv {
+    struct AuthorizePayment_Request {
+      string order_id;
+
+      int32 amount;
+
+      string currency;
+    };
+    struct AuthorizePayment_Response {
+      boolean approved;
+
+      string auth_code;
+
+      string reason;
+    };
+  };
+};

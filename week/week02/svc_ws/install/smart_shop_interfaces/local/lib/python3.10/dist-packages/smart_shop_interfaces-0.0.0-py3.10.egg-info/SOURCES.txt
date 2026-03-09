@@ -1,0 +1,10 @@
+setup.py
+smart_shop_interfaces/__init__.py
+smart_shop_interfaces.egg-info/PKG-INFO
+smart_shop_interfaces.egg-info/SOURCES.txt
+smart_shop_interfaces.egg-info/dependency_links.txt
+smart_shop_interfaces.egg-info/top_level.txt
+smart_shop_interfaces/srv/__init__.py
+smart_shop_interfaces/srv/_authorize_payment.py
+smart_shop_interfaces/srv/_check_stock.py
+smart_shop_interfaces/srv/_place_order.py

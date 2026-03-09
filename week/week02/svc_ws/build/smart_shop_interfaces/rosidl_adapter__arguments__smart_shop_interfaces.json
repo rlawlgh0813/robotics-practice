@@ -1,0 +1,9 @@
+{
+  "package_name": "smart_shop_interfaces",
+  "non_idl_tuples": [
+    "/home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces:srv/CheckStock.srv",
+    "/home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces:srv/AuthorizePayment.srv",
+    "/home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces:srv/PlaceOrder.srv",
+    "/home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces:srv/DiscountApply.srv"
+  ]
+}
