@@ -253,8 +253,13 @@ CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosid
   rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.h \
   rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__type_support.h \
   rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__struct.h \
-  rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.h
+  rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.h \
+  rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__type_support.h \
+  rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__struct.h \
+  rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.h
 
+
+rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__struct.h:
 
 rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__type_support.h:
 
@@ -279,6 +284,8 @@ rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.h:
 /usr/include/python3.10/import.h:
 
 /usr/include/python3.10/intrcheck.h:
+
+rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.h:
 
 /usr/include/python3.10/osmodule.h:
 
@@ -341,6 +348,8 @@ rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.h:
 /usr/include/python3.10/moduleobject.h:
 
 /usr/include/python3.10/dictobject.h:
+
+rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__type_support.h:
 
 /usr/include/python3.10/cpython/listobject.h:
 

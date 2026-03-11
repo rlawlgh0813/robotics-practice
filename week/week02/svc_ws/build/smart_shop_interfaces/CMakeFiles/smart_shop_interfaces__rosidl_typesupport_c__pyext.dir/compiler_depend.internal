@@ -255,4 +255,7 @@ CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generat
  /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__type_support.h
  /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__struct.h
  /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.h
+ /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__type_support.h
+ /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__struct.h
+ /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.h
 

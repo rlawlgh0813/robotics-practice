@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-3f121b77d92f5bf28434.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "my_action_interfaces__py",
+					"jsonFile" : "directory-my_action_interfaces__py-fa6944939dc9d47e1bb1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ssu/robotics-practice/week/week03/my_action/build/my_action_interfaces/my_action_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "my_action_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_my_action_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_my_action_interfaces_egg-e949ed6e339fc7afab56.json",
+					"name" : "ament_cmake_python_build_my_action_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_my_action_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_my_action_interfaces-fa95fccc985378cc2da8.json",
+					"name" : "ament_cmake_python_copy_my_action_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces-74a1138dc69bb7d3385a.json",
+					"name" : "my_action_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces__cpp-1e69ed1dbd5c9ebffc0f.json",
+					"name" : "my_action_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "my_action_interfaces__py::@a464adca9c7556d2e089",
+					"jsonFile" : "target-my_action_interfaces__py-a6d689dd083c40a0aa09.json",
+					"name" : "my_action_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces__rosidl_generator_c-11e5c96fa279ff7fa675.json",
+					"name" : "my_action_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces__rosidl_generator_py-dddd76b0b27d320b5881.json",
+					"name" : "my_action_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces__rosidl_typesupport_c-cd77522b399ae8529ce4.json",
+					"name" : "my_action_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces__rosidl_typesupport_c__pyext-b64f84996a0c1cde9de7.json",
+					"name" : "my_action_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces__rosidl_typesupport_cpp-9416676d1abb8fc6ff0a.json",
+					"name" : "my_action_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces__rosidl_typesupport_fastrtps_c-4eee96b98d1398b555ff.json",
+					"name" : "my_action_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces__rosidl_typesupport_fastrtps_c__pyext-6a253ea081ebc1ec18d5.json",
+					"name" : "my_action_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces__rosidl_typesupport_fastrtps_cpp-f42b0d3318631e450c63.json",
+					"name" : "my_action_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces__rosidl_typesupport_introspection_c-5457ae3a189a2737d144.json",
+					"name" : "my_action_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces__rosidl_typesupport_introspection_c__pyext-c2a4a7e5ccc48e36e1fe.json",
+					"name" : "my_action_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces__rosidl_typesupport_introspection_cpp-c40fd300216f1180d8c1.json",
+					"name" : "my_action_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "my_action_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-my_action_interfaces_uninstall-a1e0d3d4d2736c344e7e.json",
+					"name" : "my_action_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-200c37a90421bcff1dcf.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ssu/robotics-practice/week/week03/my_action/build/my_action_interfaces",
+		"source" : "/home/ssu/robotics-practice/week/week03/my_action/src/my_action_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

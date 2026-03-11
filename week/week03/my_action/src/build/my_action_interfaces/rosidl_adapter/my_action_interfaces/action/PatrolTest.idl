@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from my_action_interfaces/action/PatrolTest.action
+// generated code does not contain a copyright notice
+
+#include "geometry_msgs/msg/Pose2D.idl"
+
+module my_action_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct PatrolTest_Goal {
+      sequence<geometry_msgs::msg::Pose2D> waypoints;
+
+      float tolerance;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct PatrolTest_Result {
+      boolean success;
+
+      string message;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct PatrolTest_Feedback {
+      int32 current_index;
+
+      float remaining_distance;
+    };
+  };
+};

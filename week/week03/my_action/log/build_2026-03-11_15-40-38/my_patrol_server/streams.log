@@ -1,0 +1,41 @@
+[0.268s] Invoking command in '/home/ssu/robotics-practice/week/week03/my_action/src/my_patrol_server': LD_LIBRARY_PATH=/home/ssu/robotics-practice/week/week03/my_action/install/my_action_interfaces/lib:/home/ssu/robotics-practice/week/week02/svc_ws/install/smart_shop_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_patrol_server build --build-base /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build install --record /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/install.log --single-version-externally-managed install_data
+[0.362s] running egg_info
+[0.362s] creating ../../build/my_patrol_server/my_patrol_server.egg-info
+[0.364s] writing ../../build/my_patrol_server/my_patrol_server.egg-info/PKG-INFO
+[0.364s] writing dependency_links to ../../build/my_patrol_server/my_patrol_server.egg-info/dependency_links.txt
+[0.364s] writing entry points to ../../build/my_patrol_server/my_patrol_server.egg-info/entry_points.txt
+[0.364s] writing requirements to ../../build/my_patrol_server/my_patrol_server.egg-info/requires.txt
+[0.364s] writing top-level names to ../../build/my_patrol_server/my_patrol_server.egg-info/top_level.txt
+[0.364s] writing manifest file '../../build/my_patrol_server/my_patrol_server.egg-info/SOURCES.txt'
+[0.366s] reading manifest file '../../build/my_patrol_server/my_patrol_server.egg-info/SOURCES.txt'
+[0.366s] writing manifest file '../../build/my_patrol_server/my_patrol_server.egg-info/SOURCES.txt'
+[0.366s] running build
+[0.366s] running build_py
+[0.366s] creating /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build
+[0.366s] creating /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib
+[0.366s] creating /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server
+[0.366s] copying my_patrol_server/__init__.py -> /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server
+[0.366s] copying my_patrol_server/patrol_action_server.py -> /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server
+[0.366s] copying my_patrol_server/patrol_action_client.py -> /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server
+[0.366s] running install
+[0.366s] running install_lib
+[0.366s] creating /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server
+[0.366s] copying /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server/__init__.py -> /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server
+[0.366s] copying /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server/patrol_action_server.py -> /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server
+[0.366s] copying /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server/patrol_action_client.py -> /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server
+[0.366s] byte-compiling /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server/__init__.py to __init__.cpython-310.pyc
+[0.366s] byte-compiling /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server/patrol_action_server.py to patrol_action_server.cpython-310.pyc
+[0.366s] byte-compiling /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server/patrol_action_client.py to patrol_action_client.cpython-310.pyc
+[0.367s] running install_data
+[0.367s] creating /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/share/ament_index
+[0.367s] creating /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/share/ament_index/resource_index
+[0.367s] creating /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/share/ament_index/resource_index/packages
+[0.367s] copying resource/my_patrol_server -> /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/share/ament_index/resource_index/packages
+[0.367s] copying package.xml -> /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/share/my_patrol_server
+[0.367s] running install_egg_info
+[0.368s] Copying ../../build/my_patrol_server/my_patrol_server.egg-info to /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server-0.0.0-py3.10.egg-info
+[0.368s] running install_scripts
+[0.379s] Installing patrol_action_client script to /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/my_patrol_server
+[0.379s] Installing patrol_action_server script to /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/my_patrol_server
+[0.379s] writing list of installed files to '/home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/install.log'
+[0.388s] Invoked command in '/home/ssu/robotics-practice/week/week03/my_action/src/my_patrol_server' returned '0': LD_LIBRARY_PATH=/home/ssu/robotics-practice/week/week03/my_action/install/my_action_interfaces/lib:/home/ssu/robotics-practice/week/week02/svc_ws/install/smart_shop_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_patrol_server build --build-base /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build install --record /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/install.log --single-version-externally-managed install_data

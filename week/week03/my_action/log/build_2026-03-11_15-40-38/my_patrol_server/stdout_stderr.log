@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/my_patrol_server/my_patrol_server.egg-info
+writing ../../build/my_patrol_server/my_patrol_server.egg-info/PKG-INFO
+writing dependency_links to ../../build/my_patrol_server/my_patrol_server.egg-info/dependency_links.txt
+writing entry points to ../../build/my_patrol_server/my_patrol_server.egg-info/entry_points.txt
+writing requirements to ../../build/my_patrol_server/my_patrol_server.egg-info/requires.txt
+writing top-level names to ../../build/my_patrol_server/my_patrol_server.egg-info/top_level.txt
+writing manifest file '../../build/my_patrol_server/my_patrol_server.egg-info/SOURCES.txt'
+reading manifest file '../../build/my_patrol_server/my_patrol_server.egg-info/SOURCES.txt'
+writing manifest file '../../build/my_patrol_server/my_patrol_server.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build
+creating /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib
+creating /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server
+copying my_patrol_server/__init__.py -> /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server
+copying my_patrol_server/patrol_action_server.py -> /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server
+copying my_patrol_server/patrol_action_client.py -> /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server
+running install
+running install_lib
+creating /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server
+copying /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server/__init__.py -> /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server
+copying /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server/patrol_action_server.py -> /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server
+copying /home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/build/lib/my_patrol_server/patrol_action_client.py -> /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server
+byte-compiling /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server/patrol_action_server.py to patrol_action_server.cpython-310.pyc
+byte-compiling /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server/patrol_action_client.py to patrol_action_client.cpython-310.pyc
+running install_data
+creating /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/share/ament_index
+creating /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/share/ament_index/resource_index
+creating /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/share/ament_index/resource_index/packages
+copying resource/my_patrol_server -> /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/share/ament_index/resource_index/packages
+copying package.xml -> /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/share/my_patrol_server
+running install_egg_info
+Copying ../../build/my_patrol_server/my_patrol_server.egg-info to /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/python3.10/site-packages/my_patrol_server-0.0.0-py3.10.egg-info
+running install_scripts
+Installing patrol_action_client script to /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/my_patrol_server
+Installing patrol_action_server script to /home/ssu/robotics-practice/week/week03/my_action/install/my_patrol_server/lib/my_patrol_server
+writing list of installed files to '/home/ssu/robotics-practice/week/week03/my_action/build/my_patrol_server/install.log'

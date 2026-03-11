@@ -1,0 +1,7 @@
+{
+  "package_name": "my_action_interfaces",
+  "non_idl_tuples": [
+    "/home/ssu/robotics-practice/week/week03/my_action/src/my_action_interfaces:action/MyInterfaces.action",
+    "/home/ssu/robotics-practice/week/week03/my_action/src/my_action_interfaces:action/PatrolTest.action"
+  ]
+}

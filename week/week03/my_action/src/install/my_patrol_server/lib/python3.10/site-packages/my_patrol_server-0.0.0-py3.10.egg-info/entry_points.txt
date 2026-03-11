@@ -1,0 +1,4 @@
+[console_scripts]
+patrol_action_client = my_patrol_server.patrol_action_client:main
+patrol_action_server = my_patrol_server.patrol_action_server:main
+

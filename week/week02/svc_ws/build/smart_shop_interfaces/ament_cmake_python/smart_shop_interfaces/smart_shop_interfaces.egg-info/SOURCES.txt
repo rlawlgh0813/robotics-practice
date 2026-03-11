@@ -7,4 +7,5 @@ smart_shop_interfaces.egg-info/top_level.txt
 smart_shop_interfaces/srv/__init__.py
 smart_shop_interfaces/srv/_authorize_payment.py
 smart_shop_interfaces/srv/_check_stock.py
+smart_shop_interfaces/srv/_discount_apply.py
 smart_shop_interfaces/srv/_place_order.py
