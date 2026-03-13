@@ -1,0 +1,24 @@
+[0.268s] Invoking command in '/home/ssu/robotics-practice/class/class05/multi_turtle_ws/src/multi_turtle_launch': PYTHONPATH=/home/ssu/robotics-practice/class/class05/multi_turtle_ws/build/multi_turtle_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class05/multi_turtle_ws/install/multi_turtle_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/multi_turtle_launch build --build-base /home/ssu/robotics-practice/class/class05/multi_turtle_ws/build/multi_turtle_launch/build install --record /home/ssu/robotics-practice/class/class05/multi_turtle_ws/build/multi_turtle_launch/install.log --single-version-externally-managed install_data
+[0.369s] running egg_info
+[0.369s] writing ../../build/multi_turtle_launch/multi_turtle_launch.egg-info/PKG-INFO
+[0.369s] writing dependency_links to ../../build/multi_turtle_launch/multi_turtle_launch.egg-info/dependency_links.txt
+[0.369s] writing entry points to ../../build/multi_turtle_launch/multi_turtle_launch.egg-info/entry_points.txt
+[0.369s] writing requirements to ../../build/multi_turtle_launch/multi_turtle_launch.egg-info/requires.txt
+[0.369s] writing top-level names to ../../build/multi_turtle_launch/multi_turtle_launch.egg-info/top_level.txt
+[0.371s] reading manifest file '../../build/multi_turtle_launch/multi_turtle_launch.egg-info/SOURCES.txt'
+[0.371s] writing manifest file '../../build/multi_turtle_launch/multi_turtle_launch.egg-info/SOURCES.txt'
+[0.371s] running build
+[0.371s] running build_py
+[0.371s] copying multi_turtle_launch/speed_controller.py -> /home/ssu/robotics-practice/class/class05/multi_turtle_ws/build/multi_turtle_launch/build/lib/multi_turtle_launch
+[0.371s] running install
+[0.371s] running install_lib
+[0.371s] copying /home/ssu/robotics-practice/class/class05/multi_turtle_ws/build/multi_turtle_launch/build/lib/multi_turtle_launch/speed_controller.py -> /home/ssu/robotics-practice/class/class05/multi_turtle_ws/install/multi_turtle_launch/lib/python3.10/site-packages/multi_turtle_launch
+[0.371s] byte-compiling /home/ssu/robotics-practice/class/class05/multi_turtle_ws/install/multi_turtle_launch/lib/python3.10/site-packages/multi_turtle_launch/speed_controller.py to speed_controller.cpython-310.pyc
+[0.371s] running install_data
+[0.371s] running install_egg_info
+[0.371s] removing '/home/ssu/robotics-practice/class/class05/multi_turtle_ws/install/multi_turtle_launch/lib/python3.10/site-packages/multi_turtle_launch-0.0.0-py3.10.egg-info' (and everything under it)
+[0.371s] Copying ../../build/multi_turtle_launch/multi_turtle_launch.egg-info to /home/ssu/robotics-practice/class/class05/multi_turtle_ws/install/multi_turtle_launch/lib/python3.10/site-packages/multi_turtle_launch-0.0.0-py3.10.egg-info
+[0.371s] running install_scripts
+[0.381s] Installing speed_controller script to /home/ssu/robotics-practice/class/class05/multi_turtle_ws/install/multi_turtle_launch/lib/multi_turtle_launch
+[0.381s] writing list of installed files to '/home/ssu/robotics-practice/class/class05/multi_turtle_ws/build/multi_turtle_launch/install.log'
+[0.391s] Invoked command in '/home/ssu/robotics-practice/class/class05/multi_turtle_ws/src/multi_turtle_launch' returned '0': PYTHONPATH=/home/ssu/robotics-practice/class/class05/multi_turtle_ws/build/multi_turtle_launch/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class05/multi_turtle_ws/install/multi_turtle_launch/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/multi_turtle_launch build --build-base /home/ssu/robotics-practice/class/class05/multi_turtle_ws/build/multi_turtle_launch/build install --record /home/ssu/robotics-practice/class/class05/multi_turtle_ws/build/multi_turtle_launch/install.log --single-version-externally-managed install_data

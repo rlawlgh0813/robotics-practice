@@ -1,0 +1,24 @@
+[0.271s] Invoking command in '/home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control': PYTHONPATH=/home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build --no-deps symlink_data
+[0.384s] running develop
+[0.447s] running egg_info
+[0.447s] creating turtle_param_control.egg-info
+[0.447s] writing turtle_param_control.egg-info/PKG-INFO
+[0.447s] writing dependency_links to turtle_param_control.egg-info/dependency_links.txt
+[0.447s] writing entry points to turtle_param_control.egg-info/entry_points.txt
+[0.447s] writing requirements to turtle_param_control.egg-info/requires.txt
+[0.447s] writing top-level names to turtle_param_control.egg-info/top_level.txt
+[0.447s] writing manifest file 'turtle_param_control.egg-info/SOURCES.txt'
+[0.447s] reading manifest file 'turtle_param_control.egg-info/SOURCES.txt'
+[0.447s] writing manifest file 'turtle_param_control.egg-info/SOURCES.txt'
+[0.448s] running build_ext
+[0.448s] Creating /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages/turtle-param-control.egg-link (link to .)
+[0.449s] Installing turtle_controller script to /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/turtle_param_control
+[0.449s] 
+[0.449s] Installed /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control
+[0.449s] running symlink_data
+[0.449s] creating /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/share/ament_index
+[0.449s] creating /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/share/ament_index/resource_index
+[0.449s] creating /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/share/ament_index/resource_index/packages
+[0.449s] symbolically linking /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/resource/turtle_param_control -> /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/share/ament_index/resource_index/packages
+[0.449s] symbolically linking /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/package.xml -> /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/share/turtle_param_control
+[0.461s] Invoked command in '/home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control' returned '0': PYTHONPATH=/home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build --no-deps symlink_data

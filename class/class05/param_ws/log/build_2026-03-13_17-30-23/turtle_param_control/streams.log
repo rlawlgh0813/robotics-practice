@@ -1,0 +1,36 @@
+[0.264s] Invoking command in '/home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control': PYTHONPATH=/home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build
+[0.370s] running develop
+[0.428s] Removing /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages/turtle-param-control.egg-link (link to .)
+[0.442s] Invoked command in '/home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control' returned '0': PYTHONPATH=/home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build
+[0.442s] Invoking command in '/home/ssu/robotics-practice/class/class05/param_ws/src/turtle_param_control': PYTHONPATH=/home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_param_control build --build-base /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build install --record /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/install.log --single-version-externally-managed install_data --force
+[0.540s] running egg_info
+[0.540s] writing ../../build/turtle_param_control/turtle_param_control.egg-info/PKG-INFO
+[0.540s] writing dependency_links to ../../build/turtle_param_control/turtle_param_control.egg-info/dependency_links.txt
+[0.540s] writing entry points to ../../build/turtle_param_control/turtle_param_control.egg-info/entry_points.txt
+[0.540s] writing requirements to ../../build/turtle_param_control/turtle_param_control.egg-info/requires.txt
+[0.540s] writing top-level names to ../../build/turtle_param_control/turtle_param_control.egg-info/top_level.txt
+[0.543s] reading manifest file '../../build/turtle_param_control/turtle_param_control.egg-info/SOURCES.txt'
+[0.543s] writing manifest file '../../build/turtle_param_control/turtle_param_control.egg-info/SOURCES.txt'
+[0.543s] running build
+[0.543s] running build_py
+[0.543s] creating /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build
+[0.543s] creating /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build/lib
+[0.543s] creating /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build/lib/turtle_param_control
+[0.543s] copying turtle_param_control/__init__.py -> /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build/lib/turtle_param_control
+[0.543s] copying turtle_param_control/turtle_controller.py -> /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build/lib/turtle_param_control
+[0.543s] running install
+[0.543s] running install_lib
+[0.543s] creating /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages/turtle_param_control
+[0.543s] copying /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build/lib/turtle_param_control/__init__.py -> /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages/turtle_param_control
+[0.543s] copying /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build/lib/turtle_param_control/turtle_controller.py -> /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages/turtle_param_control
+[0.543s] byte-compiling /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages/turtle_param_control/__init__.py to __init__.cpython-310.pyc
+[0.543s] byte-compiling /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages/turtle_param_control/turtle_controller.py to turtle_controller.cpython-310.pyc
+[0.543s] running install_data
+[0.543s] copying resource/turtle_param_control -> /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/share/ament_index/resource_index/packages
+[0.543s] copying package.xml -> /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/share/turtle_param_control
+[0.543s] running install_egg_info
+[0.546s] Copying ../../build/turtle_param_control/turtle_param_control.egg-info to /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages/turtle_param_control-0.0.0-py3.10.egg-info
+[0.546s] running install_scripts
+[0.553s] Installing turtle_controller script to /home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/turtle_param_control
+[0.553s] writing list of installed files to '/home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/install.log'
+[0.565s] Invoked command in '/home/ssu/robotics-practice/class/class05/param_ws/src/turtle_param_control' returned '0': PYTHONPATH=/home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class05/param_ws/install/turtle_param_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/turtle_param_control build --build-base /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/build install --record /home/ssu/robotics-practice/class/class05/param_ws/build/turtle_param_control/install.log --single-version-externally-managed install_data --force

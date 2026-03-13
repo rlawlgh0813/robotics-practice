@@ -1,0 +1,3 @@
+[console_scripts]
+speed_controller = multi_turtle_launch.speed_controller:main
+
