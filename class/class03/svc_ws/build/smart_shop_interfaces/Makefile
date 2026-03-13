@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces
+CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces
+CMAKE_BINARY_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -405,6 +405,30 @@ smart_shop_interfaces__py/fast:
 	$(MAKE) $(MAKESILENT) -f smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py.dir/build.make smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py.dir/build
 .PHONY : smart_shop_interfaces__py/fast
 
+rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.o: rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o
+.PHONY : rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.o
+
+# target to build an object file
+rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o
+.PHONY : rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o
+
+rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.i: rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.i
+.PHONY : rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.i
+
+# target to preprocess a source file
+rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.i
+.PHONY : rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.i
+
+rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.s: rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.s
+.PHONY : rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.s
+
+# target to generate assembly for a file
+rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.s
+.PHONY : rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.s
+
 rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.o: rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o
 .PHONY : rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.o
 
@@ -573,6 +597,30 @@ rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typ
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c__pyext.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_introspection_c.c.s
 .PHONY : rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_introspection_c.c.s
 
+rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.o: rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.o
+.PHONY : rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.o
+
+# target to build an object file
+rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.o
+.PHONY : rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.o
+
+rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.i: rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.i
+.PHONY : rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.i
+
+# target to preprocess a source file
+rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.i
+.PHONY : rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.i
+
+rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.s: rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.s
+.PHONY : rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.s
+
+# target to generate assembly for a file
+rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.s
+.PHONY : rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.s
+
 rosidl_generator_py/smart_shop_interfaces/srv/_authorize_payment_s.o: rosidl_generator_py/smart_shop_interfaces/srv/_authorize_payment_s.c.o
 .PHONY : rosidl_generator_py/smart_shop_interfaces/srv/_authorize_payment_s.o
 
@@ -668,6 +716,30 @@ rosidl_generator_py/smart_shop_interfaces/srv/_place_order_s.s: rosidl_generator
 rosidl_generator_py/smart_shop_interfaces/srv/_place_order_s.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/rosidl_generator_py/smart_shop_interfaces/srv/_place_order_s.c.s
 .PHONY : rosidl_generator_py/smart_shop_interfaces/srv/_place_order_s.c.s
+
+rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.o: rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.o
+
+# target to build an object file
+rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.o
+.PHONY : rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.o
+
+rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.i: rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.i
+.PHONY : rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.i
+
+rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.s: rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.s
+.PHONY : rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.s
 
 rosidl_typesupport_c/smart_shop_interfaces/srv/authorize_payment__type_support.o: rosidl_typesupport_c/smart_shop_interfaces/srv/authorize_payment__type_support.cpp.o
 .PHONY : rosidl_typesupport_c/smart_shop_interfaces/srv/authorize_payment__type_support.o
@@ -765,6 +837,30 @@ rosidl_typesupport_c/smart_shop_interfaces/srv/place_order__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/smart_shop_interfaces/srv/place_order__type_support.cpp.s
 .PHONY : rosidl_typesupport_c/smart_shop_interfaces/srv/place_order__type_support.cpp.s
 
+rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.o: rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.o
+
+# target to build an object file
+rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.o
+.PHONY : rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.o
+
+rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.i: rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.i
+.PHONY : rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.i
+
+rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.s: rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.s
+.PHONY : rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.s
+
 rosidl_typesupport_cpp/smart_shop_interfaces/srv/authorize_payment__type_support.o: rosidl_typesupport_cpp/smart_shop_interfaces/srv/authorize_payment__type_support.cpp.o
 .PHONY : rosidl_typesupport_cpp/smart_shop_interfaces/srv/authorize_payment__type_support.o
 
@@ -860,6 +956,30 @@ rosidl_typesupport_cpp/smart_shop_interfaces/srv/place_order__type_support.s: ro
 rosidl_typesupport_cpp/smart_shop_interfaces/srv/place_order__type_support.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/smart_shop_interfaces/srv/place_order__type_support.cpp.s
 .PHONY : rosidl_typesupport_cpp/smart_shop_interfaces/srv/place_order__type_support.cpp.s
+
+rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.o: rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.o
+
+rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.i: rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.i
+
+rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.s: rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.s
 
 rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support_c.o: rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support_c.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support_c.o
@@ -957,6 +1077,30 @@ rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/place_order__type
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/place_order__type_support_c.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/place_order__type_support_c.cpp.s
 
+rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.o: rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.o
+
+# target to build an object file
+rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.o
+.PHONY : rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.o
+
+rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.i: rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.i
+.PHONY : rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.i
+
+rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.s: rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.s
+.PHONY : rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.s
+
 rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/authorize_payment__type_support.o: rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/authorize_payment__type_support.cpp.o
 .PHONY : rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/authorize_payment__type_support.o
 
@@ -1053,6 +1197,30 @@ rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/pl
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/place_order__type_support.cpp.s
 .PHONY : rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/place_order__type_support.cpp.s
 
+rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.o: rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.o
+.PHONY : rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.o
+
+rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.i: rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.i
+.PHONY : rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.i
+
+rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.s: rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.s
+.PHONY : rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.s
+
 rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support.o: rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support.c.o
 .PHONY : rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support.o
 
@@ -1148,6 +1316,30 @@ rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/place_order_
 rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/place_order__type_support.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/place_order__type_support.c.s
 .PHONY : rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/place_order__type_support.c.s
+
+rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.o: rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.o
+
+# target to build an object file
+rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.o
+.PHONY : rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.o
+
+rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.i: rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.i
+
+# target to preprocess a source file
+rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.i
+.PHONY : rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.i
+
+rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.s: rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.s
+
+# target to generate assembly for a file
+rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.s
+.PHONY : rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.s
 
 rosidl_typesupport_introspection_cpp/smart_shop_interfaces/srv/detail/authorize_payment__type_support.o: rosidl_typesupport_introspection_cpp/smart_shop_interfaces/srv/detail/authorize_payment__type_support.cpp.o
 .PHONY : rosidl_typesupport_introspection_cpp/smart_shop_interfaces/srv/detail/authorize_payment__type_support.o
@@ -1276,6 +1468,9 @@ help:
 	@echo "... smart_shop_interfaces__rosidl_typesupport_introspection_c"
 	@echo "... smart_shop_interfaces__rosidl_typesupport_introspection_c__pyext"
 	@echo "... smart_shop_interfaces__rosidl_typesupport_introspection_cpp"
+	@echo "... rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.o"
+	@echo "... rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.i"
+	@echo "... rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.s"
 	@echo "... rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.o"
 	@echo "... rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.i"
 	@echo "... rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.s"
@@ -1297,6 +1492,9 @@ help:
 	@echo "... rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_introspection_c.o"
 	@echo "... rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_introspection_c.i"
 	@echo "... rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_introspection_c.s"
+	@echo "... rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.o"
+	@echo "... rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.i"
+	@echo "... rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.s"
 	@echo "... rosidl_generator_py/smart_shop_interfaces/srv/_authorize_payment_s.o"
 	@echo "... rosidl_generator_py/smart_shop_interfaces/srv/_authorize_payment_s.i"
 	@echo "... rosidl_generator_py/smart_shop_interfaces/srv/_authorize_payment_s.s"
@@ -1309,6 +1507,9 @@ help:
 	@echo "... rosidl_generator_py/smart_shop_interfaces/srv/_place_order_s.o"
 	@echo "... rosidl_generator_py/smart_shop_interfaces/srv/_place_order_s.i"
 	@echo "... rosidl_generator_py/smart_shop_interfaces/srv/_place_order_s.s"
+	@echo "... rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.o"
+	@echo "... rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.i"
+	@echo "... rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.s"
 	@echo "... rosidl_typesupport_c/smart_shop_interfaces/srv/authorize_payment__type_support.o"
 	@echo "... rosidl_typesupport_c/smart_shop_interfaces/srv/authorize_payment__type_support.i"
 	@echo "... rosidl_typesupport_c/smart_shop_interfaces/srv/authorize_payment__type_support.s"
@@ -1321,6 +1522,9 @@ help:
 	@echo "... rosidl_typesupport_c/smart_shop_interfaces/srv/place_order__type_support.o"
 	@echo "... rosidl_typesupport_c/smart_shop_interfaces/srv/place_order__type_support.i"
 	@echo "... rosidl_typesupport_c/smart_shop_interfaces/srv/place_order__type_support.s"
+	@echo "... rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.o"
+	@echo "... rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.i"
+	@echo "... rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.s"
 	@echo "... rosidl_typesupport_cpp/smart_shop_interfaces/srv/authorize_payment__type_support.o"
 	@echo "... rosidl_typesupport_cpp/smart_shop_interfaces/srv/authorize_payment__type_support.i"
 	@echo "... rosidl_typesupport_cpp/smart_shop_interfaces/srv/authorize_payment__type_support.s"
@@ -1333,6 +1537,9 @@ help:
 	@echo "... rosidl_typesupport_cpp/smart_shop_interfaces/srv/place_order__type_support.o"
 	@echo "... rosidl_typesupport_cpp/smart_shop_interfaces/srv/place_order__type_support.i"
 	@echo "... rosidl_typesupport_cpp/smart_shop_interfaces/srv/place_order__type_support.s"
+	@echo "... rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.o"
+	@echo "... rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.i"
+	@echo "... rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.s"
 	@echo "... rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support_c.s"
@@ -1345,6 +1552,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/place_order__type_support_c.o"
 	@echo "... rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/place_order__type_support_c.i"
 	@echo "... rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/place_order__type_support_c.s"
+	@echo "... rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.o"
+	@echo "... rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.i"
+	@echo "... rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.s"
 	@echo "... rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/authorize_payment__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/authorize_payment__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/authorize_payment__type_support.s"
@@ -1357,6 +1567,9 @@ help:
 	@echo "... rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/place_order__type_support.o"
 	@echo "... rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/place_order__type_support.i"
 	@echo "... rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/place_order__type_support.s"
+	@echo "... rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.o"
+	@echo "... rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.i"
+	@echo "... rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.s"
 	@echo "... rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support.s"
@@ -1369,6 +1582,9 @@ help:
 	@echo "... rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/place_order__type_support.o"
 	@echo "... rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/place_order__type_support.i"
 	@echo "... rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/place_order__type_support.s"
+	@echo "... rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.o"
+	@echo "... rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.i"
+	@echo "... rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.s"
 	@echo "... rosidl_typesupport_introspection_cpp/smart_shop_interfaces/srv/detail/authorize_payment__type_support.o"
 	@echo "... rosidl_typesupport_introspection_cpp/smart_shop_interfaces/srv/detail/authorize_payment__type_support.i"
 	@echo "... rosidl_typesupport_introspection_cpp/smart_shop_interfaces/srv/detail/authorize_payment__type_support.s"

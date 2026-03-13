@@ -10,6 +10,9 @@ from smart_shop_interfaces.srv import (
     DiscountApply,
 )
 
+from smart_shop_interfaces.msg import OrderLog
+from datetime import datetime
+
 
 class OrderManager(Node):
     def __init__(self):
@@ -42,7 +45,25 @@ class OrderManager(Node):
             callback_group=self.cb_group
         )
 
+        self.log_pub = self.create_publisher(
+            OrderLog,
+            'order_log',
+            10
+        )
+
         self.get_logger().info('OrderManager ready (with discount).')
+
+    def publish_order_log(self, request, response) :
+        log_msg = OrderLog()
+        log_msg.order_id = request.order_id
+        log_msg.item_id = request.item_id
+        log_msg.quantity = request.quantity
+        log_msg.amount = request.amount
+        log_msg.success = response.success
+        log_msg.status = response.status
+        log_msg.detail = response.detail
+        log_msg.timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        self.log_pub.publish(log_msg)
 
     def wait_service_or_fail(self, client, name, timeout_sec=3.0):
         if not client.wait_for_service(timeout_sec=timeout_sec):
@@ -64,6 +85,7 @@ class OrderManager(Node):
             response.detail = 'check_stock not available'
             response.remaining_stock = 0
             response.payment_auth_code = ''
+            self.publish_order_log(request,response)
             return response
 
         # 2) 할인 서비스 확인
@@ -73,6 +95,7 @@ class OrderManager(Node):
             response.detail = 'apply_discount not available'
             response.remaining_stock = 0
             response.payment_auth_code = ''
+            self.publish_order_log(request,response)
             return response
 
         # 3) 결제 서비스 확인
@@ -82,6 +105,7 @@ class OrderManager(Node):
             response.detail = 'authorize_payment not available'
             response.remaining_stock = 0
             response.payment_auth_code = ''
+            self.publish_order_log(request,response)
             return response
 
         # 재고 확인
@@ -102,6 +126,7 @@ class OrderManager(Node):
             response.detail = f'stock: {stock_res.reason}'
             response.remaining_stock = stock_res.remaining
             response.payment_auth_code = ''
+            self.publish_order_log(request,response)
             return response
 
         # 할인 적용
@@ -140,6 +165,7 @@ class OrderManager(Node):
             )
             response.remaining_stock = stock_res.remaining
             response.payment_auth_code = ''
+            self.publish_order_log(request,response)
             return response
 
         response.success = True
@@ -157,6 +183,7 @@ class OrderManager(Node):
             f"discount={discount_rate}%, final={discounted_amount}"
         )
 
+        self.publish_order_log(request,response)
         return response
 
 

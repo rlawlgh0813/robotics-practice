@@ -11,6 +11,7 @@ setup.py
 resource/smart_shop_nodes
 smart_shop_nodes/__init__.py
 smart_shop_nodes/discount_server.py
+smart_shop_nodes/log_monitor.py
 smart_shop_nodes/order_client.py
 smart_shop_nodes/order_manager.py
 smart_shop_nodes/payment_server.py

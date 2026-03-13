@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces
+CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces
+CMAKE_BINARY_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces
 
 # Utility rule file for smart_shop_interfaces__cpp.
 
@@ -86,6 +86,11 @@ CMakeFiles/smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interface
 CMakeFiles/smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/srv/detail/discount_apply__struct.hpp
 CMakeFiles/smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/srv/detail/discount_apply__traits.hpp
 CMakeFiles/smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/srv/detail/discount_apply__type_support.hpp
+CMakeFiles/smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/msg/order_log.hpp
+CMakeFiles/smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__builder.hpp
+CMakeFiles/smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__struct.hpp
+CMakeFiles/smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__traits.hpp
+CMakeFiles/smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.hpp
 CMakeFiles/smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -107,8 +112,9 @@ rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp: rosidl_adapter/s
 rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp: rosidl_adapter/smart_shop_interfaces/srv/AuthorizePayment.idl
 rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp: rosidl_adapter/smart_shop_interfaces/srv/PlaceOrder.idl
 rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp: rosidl_adapter/smart_shop_interfaces/srv/DiscountApply.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_cpp__arguments.json
+rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp: rosidl_adapter/smart_shop_interfaces/msg/OrderLog.idl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/smart_shop_interfaces/srv/detail/check_stock__builder.hpp: rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/smart_shop_interfaces/srv/detail/check_stock__builder.hpp
@@ -167,7 +173,27 @@ rosidl_generator_cpp/smart_shop_interfaces/srv/detail/discount_apply__traits.hpp
 rosidl_generator_cpp/smart_shop_interfaces/srv/detail/discount_apply__type_support.hpp: rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/smart_shop_interfaces/srv/detail/discount_apply__type_support.hpp
 
+rosidl_generator_cpp/smart_shop_interfaces/msg/order_log.hpp: rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/smart_shop_interfaces/msg/order_log.hpp
+
+rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__builder.hpp: rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__builder.hpp
+
+rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__struct.hpp: rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__struct.hpp
+
+rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__traits.hpp: rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__traits.hpp
+
+rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.hpp: rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.hpp
+
 smart_shop_interfaces__cpp: CMakeFiles/smart_shop_interfaces__cpp
+smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__builder.hpp
+smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__struct.hpp
+smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__traits.hpp
+smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.hpp
+smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/msg/order_log.hpp
 smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/srv/authorize_payment.hpp
 smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/srv/check_stock.hpp
 smart_shop_interfaces__cpp: rosidl_generator_cpp/smart_shop_interfaces/srv/detail/authorize_payment__builder.hpp
@@ -200,6 +226,6 @@ CMakeFiles/smart_shop_interfaces__cpp.dir/clean:
 .PHONY : CMakeFiles/smart_shop_interfaces__cpp.dir/clean
 
 CMakeFiles/smart_shop_interfaces__cpp.dir/depend:
-	cd /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles/smart_shop_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles/smart_shop_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/smart_shop_interfaces__cpp.dir/depend
 

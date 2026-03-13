@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces
+CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces
+CMAKE_BINARY_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

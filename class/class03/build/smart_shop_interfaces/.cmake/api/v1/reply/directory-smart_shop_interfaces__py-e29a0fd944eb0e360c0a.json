@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "smart_shop_interfaces__py",
+		"source" : "/home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces/smart_shop_interfaces__py"
+	}
+}

@@ -1,12 +1,13 @@
 {
   "package_name": "smart_shop_interfaces",
-  "output_dir": "/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_typesupport_fastrtps_c/smart_shop_interfaces",
+  "output_dir": "/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_typesupport_fastrtps_c/smart_shop_interfaces",
   "template_dir": "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource",
   "idl_tuples": [
-    "/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:srv/CheckStock.idl",
-    "/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:srv/AuthorizePayment.idl",
-    "/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:srv/PlaceOrder.idl",
-    "/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:srv/DiscountApply.idl"
+    "/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:srv/CheckStock.idl",
+    "/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:srv/AuthorizePayment.idl",
+    "/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:srv/PlaceOrder.idl",
+    "/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:srv/DiscountApply.idl",
+    "/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces:msg/OrderLog.idl"
   ],
   "target_dependencies": [
     "/opt/ros/humble/lib/rosidl_typesupport_fastrtps_c/rosidl_typesupport_fastrtps_c",
@@ -17,9 +18,10 @@
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/msg__type_support_c.cpp.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__rosidl_typesupport_fastrtps_c.h.em",
     "/opt/ros/humble/share/rosidl_typesupport_fastrtps_c/resource/srv__type_support_c.cpp.em",
-    "/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces/srv/CheckStock.idl",
-    "/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces/srv/AuthorizePayment.idl",
-    "/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces/srv/PlaceOrder.idl",
-    "/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces/srv/DiscountApply.idl"
+    "/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces/srv/CheckStock.idl",
+    "/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces/srv/AuthorizePayment.idl",
+    "/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces/srv/PlaceOrder.idl",
+    "/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces/srv/DiscountApply.idl",
+    "/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_adapter/smart_shop_interfaces/msg/OrderLog.idl"
   ]
 }

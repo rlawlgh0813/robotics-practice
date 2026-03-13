@@ -1,3 +1,5 @@
+msg/OrderLog.idl
+msg/OrderLog.msg
 srv/AuthorizePayment.idl
 srv/AuthorizePayment.srv
 srv/AuthorizePayment_Request.msg

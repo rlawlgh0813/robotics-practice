@@ -1,8 +1,8 @@
-# Install script for directory: /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/smart_shop_interfaces__py
+# Install script for directory: /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/smart_shop_interfaces__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/ssu/robotics-practice/week/week02/svc_ws/install/smart_shop_interfaces")
+  set(CMAKE_INSTALL_PREFIX "/home/ssu/robotics-practice/class/class03/svc_ws/install/smart_shop_interfaces")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

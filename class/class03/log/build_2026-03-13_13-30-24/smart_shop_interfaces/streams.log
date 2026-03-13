@@ -1,0 +1,368 @@
+[0.009s] Invoking command in '/home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ssu/robotics-practice/week/week02/svc_ws/install/smart_shop_nodes:/opt/ros/humble /usr/bin/cmake /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces -DCMAKE_INSTALL_PREFIX=/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces
+[0.082s] -- The C compiler identification is GNU 11.4.0
+[0.135s] -- The CXX compiler identification is GNU 11.4.0
+[0.143s] -- Detecting C compiler ABI info
+[0.192s] -- Detecting C compiler ABI info - done
+[0.197s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.197s] -- Detecting C compile features
+[0.198s] -- Detecting C compile features - done
+[0.199s] -- Detecting CXX compiler ABI info
+[0.251s] -- Detecting CXX compiler ABI info - done
+[0.257s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.257s] -- Detecting CXX compile features
+[0.257s] -- Detecting CXX compile features - done
+[0.260s] -- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.338s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.388s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.390s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.393s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.414s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.577s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.675s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.795s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.807s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[0.808s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.822s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[0.823s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.823s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.823s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.834s] -- Found PythonExtra: .so  
+[0.852s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.862s] -- Added test 'lint_cmake' to check CMake code style
+[0.863s] -- Added test 'xmllint' to check XML markup files
+[0.864s] -- Configuring done
+[0.879s] -- Generating done
+[0.883s] -- Build files have been written to: /home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces
+[0.886s] Invoked command in '/home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ssu/robotics-practice/week/week02/svc_ws/install/smart_shop_nodes:/opt/ros/humble /usr/bin/cmake /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces -DCMAKE_INSTALL_PREFIX=/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces
+[0.888s] Invoking command in '/home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ssu/robotics-practice/week/week02/svc_ws/install/smart_shop_nodes:/opt/ros/humble /usr/bin/cmake --build /home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces -- -j14 -l14
+[0.915s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.922s] [  3%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[0.924s] [  3%] Built target ament_cmake_python_copy_smart_shop_interfaces
+[1.025s] running egg_info
+[1.025s] creating smart_shop_interfaces.egg-info
+[1.025s] writing smart_shop_interfaces.egg-info/PKG-INFO
+[1.026s] writing dependency_links to smart_shop_interfaces.egg-info/dependency_links.txt
+[1.026s] writing top-level names to smart_shop_interfaces.egg-info/top_level.txt
+[1.026s] writing manifest file 'smart_shop_interfaces.egg-info/SOURCES.txt'
+[1.027s] reading manifest file 'smart_shop_interfaces.egg-info/SOURCES.txt'
+[1.027s] writing manifest file 'smart_shop_interfaces.egg-info/SOURCES.txt'
+[1.044s] [  3%] Built target ament_cmake_python_build_smart_shop_interfaces_egg
+[1.167s] [  4%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o[0m
+[1.167s] [  7%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o[0m
+[1.167s] [  7%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o[0m
+[1.167s] [  9%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o[0m
+[1.168s] [ 11%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o[0m
+[1.175s] [ 11%] Built target smart_shop_interfaces__cpp
+[1.181s] [ 14%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[1.181s] [ 14%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[1.182s] [ 15%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[1.214s] [ 17%] [32m[1mLinking C shared library libsmart_shop_interfaces__rosidl_generator_c.so[0m
+[1.237s] [ 17%] Built target smart_shop_interfaces__rosidl_generator_c
+[1.243s] [ 20%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[1.243s] [ 20%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[1.245s] [ 22%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[1.340s] [ 23%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/smart_shop_interfaces/srv/check_stock__type_support.cpp.o[0m
+[1.342s] [ 25%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/smart_shop_interfaces/srv/authorize_payment__type_support.cpp.o[0m
+[1.342s] [ 26%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/smart_shop_interfaces/srv/discount_apply__type_support.cpp.o[0m
+[1.342s] [ 28%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/smart_shop_interfaces/srv/place_order__type_support.cpp.o[0m
+[1.345s] [ 30%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/smart_shop_interfaces/msg/order_log__type_support.cpp.o[0m
+[1.380s] [ 36%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/smart_shop_interfaces/srv/detail/authorize_payment__type_support.cpp.o[0m
+[1.380s] [ 36%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/smart_shop_interfaces/srv/detail/discount_apply__type_support.cpp.o[0m
+[1.380s] [ 36%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/smart_shop_interfaces/srv/detail/check_stock__type_support.cpp.o[0m
+[1.380s] [ 36%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/smart_shop_interfaces/srv/detail/place_order__type_support.cpp.o[0m
+[1.380s] [ 38%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/smart_shop_interfaces/msg/detail/order_log__type_support.cpp.o[0m
+[1.420s] [ 39%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/smart_shop_interfaces/srv/check_stock__type_support.cpp.o[0m
+[1.441s] [ 41%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/smart_shop_interfaces/srv/authorize_payment__type_support.cpp.o[0m
+[1.449s] [ 42%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/check_stock__type_support.cpp.o[0m
+[1.459s] [ 44%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/smart_shop_interfaces/srv/place_order__type_support.cpp.o[0m
+[1.478s] [ 46%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/smart_shop_interfaces/srv/discount_apply__type_support.cpp.o[0m
+[1.487s] [ 47%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/smart_shop_interfaces/msg/order_log__type_support.cpp.o[0m
+[1.494s] [ 50%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/authorize_payment__type_support.cpp.o[0m
+[1.494s] [ 50%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/check_stock__type_support.c.o[0m
+[1.496s] [ 52%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/place_order__type_support.cpp.o[0m
+[1.500s] [ 53%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/check_stock__type_support_c.cpp.o[0m
+[1.503s] [ 57%] [32m[1mLinking CXX shared library libsmart_shop_interfaces__rosidl_typesupport_c.so[0m
+[1.503s] [ 57%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support.c.o[0m
+[1.514s] [ 58%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/srv/detail/dds_fastrtps/discount_apply__type_support.cpp.o[0m
+[1.516s] [ 60%] [32m[1mLinking CXX shared library libsmart_shop_interfaces__rosidl_typesupport_cpp.so[0m
+[1.520s] [ 61%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/place_order__type_support.c.o[0m
+[1.529s] [ 63%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/smart_shop_interfaces/srv/detail/discount_apply__type_support.c.o[0m
+[1.542s] [ 63%] Built target smart_shop_interfaces__rosidl_typesupport_c
+[1.545s] [ 65%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/smart_shop_interfaces/msg/detail/order_log__type_support.c.o[0m
+[1.545s] [ 65%] Built target smart_shop_interfaces__rosidl_typesupport_cpp
+[1.549s] [ 66%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/authorize_payment__type_support_c.cpp.o[0m
+[1.550s] [ 68%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/place_order__type_support_c.cpp.o[0m
+[1.551s] [ 69%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/srv/detail/discount_apply__type_support_c.cpp.o[0m
+[1.556s] [ 71%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/smart_shop_interfaces/msg/detail/dds_fastrtps/order_log__type_support.cpp.o[0m
+[1.557s] [ 73%] [32mBuilding CXX object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/smart_shop_interfaces/msg/detail/order_log__type_support_c.cpp.o[0m
+[1.567s] [ 74%] [32m[1mLinking C shared library libsmart_shop_interfaces__rosidl_typesupport_introspection_c.so[0m
+[1.591s] [ 74%] Built target smart_shop_interfaces__rosidl_typesupport_introspection_c
+[1.611s] [ 76%] [32m[1mLinking CXX shared library libsmart_shop_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[1.658s] [ 76%] Built target smart_shop_interfaces__rosidl_typesupport_introspection_cpp
+[1.732s] [ 77%] [32m[1mLinking CXX shared library libsmart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[1.732s] [ 79%] [32m[1mLinking CXX shared library libsmart_shop_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[1.777s] [ 79%] Built target smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp
+[1.777s] [ 79%] Built target smart_shop_interfaces__rosidl_typesupport_fastrtps_c
+[1.788s] [ 79%] Built target smart_shop_interfaces
+[1.803s] [ 80%] [34m[1mGenerating Python code for ROS interfaces[0m
+[2.170s] [ 80%] Built target smart_shop_interfaces__py
+[2.181s] [ 84%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/rosidl_generator_py/smart_shop_interfaces/srv/_authorize_payment_s.c.o[0m
+[2.181s] [ 84%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/rosidl_generator_py/smart_shop_interfaces/srv/_place_order_s.c.o[0m
+[2.181s] [ 85%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/rosidl_generator_py/smart_shop_interfaces/srv/_check_stock_s.c.o[0m
+[2.181s] [ 87%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/rosidl_generator_py/smart_shop_interfaces/srv/_discount_apply_s.c.o[0m
+[2.182s] [ 88%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_generator_py.dir/rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c.o[0m
+[2.248s] [ 90%] [32m[1mLinking C shared library rosidl_generator_py/smart_shop_interfaces/libsmart_shop_interfaces__rosidl_generator_py.so[0m
+[2.272s] [ 90%] Built target smart_shop_interfaces__rosidl_generator_py
+[2.284s] [ 92%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[2.287s] [ 93%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[2.287s] [ 95%] [32mBuilding C object CMakeFiles/smart_shop_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[2.340s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/smart_shop_interfaces/smart_shop_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.340s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/smart_shop_interfaces/smart_shop_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.342s] [100%] [32m[1mLinking C shared library rosidl_generator_py/smart_shop_interfaces/smart_shop_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[2.361s] [100%] Built target smart_shop_interfaces__rosidl_typesupport_c__pyext
+[2.361s] [100%] Built target smart_shop_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[2.361s] [100%] Built target smart_shop_interfaces__rosidl_typesupport_introspection_c__pyext
+[2.370s] Invoked command in '/home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ssu/robotics-practice/week/week02/svc_ws/install/smart_shop_nodes:/opt/ros/humble /usr/bin/cmake --build /home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces -- -j14 -l14
+[2.377s] Invoking command in '/home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ssu/robotics-practice/week/week02/svc_ws/install/smart_shop_nodes:/opt/ros/humble /usr/bin/cmake --install /home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces
+[2.382s] -- Install configuration: ""
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/ament_index/resource_index/rosidl_interfaces/smart_shop_interfaces
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/rosidl_generator_c__visibility_control.h
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/order_log.h
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__functions.c
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__functions.h
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__struct.h
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__type_support.h
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/check_stock.h
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__functions.c
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__functions.h
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__struct.h
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__type_support.h
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__functions.c
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__functions.h
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__struct.h
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__type_support.h
+[2.382s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__functions.c
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__functions.h
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__struct.h
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__type_support.h
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__functions.c
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__functions.h
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__struct.h
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__type_support.h
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/authorize_payment.h
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/place_order.h
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/discount_apply.h
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/environment/library_path.sh
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/environment/library_path.dsv
+[2.383s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_generator_c.so
+[2.384s] -- Set runtime path of "/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_generator_c.so" to ""
+[2.384s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces
+[2.384s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg
+[2.384s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.384s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail
+[2.384s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__rosidl_typesupport_fastrtps_c.h
+[2.385s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv
+[2.385s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__rosidl_typesupport_fastrtps_c.h
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__rosidl_typesupport_fastrtps_c.h
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__rosidl_typesupport_fastrtps_c.h
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__rosidl_typesupport_fastrtps_c.h
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_typesupport_fastrtps_c.so
+[2.385s] -- Set runtime path of "/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[2.385s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces
+[2.385s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.385s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__rosidl_typesupport_introspection_c.h
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__type_support.c
+[2.385s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv
+[2.385s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__rosidl_typesupport_introspection_c.h
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__type_support.c
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__rosidl_typesupport_introspection_c.h
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__type_support.c
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__rosidl_typesupport_introspection_c.h
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__type_support.c
+[2.385s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__rosidl_typesupport_introspection_c.h
+[2.386s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__type_support.c
+[2.386s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_typesupport_introspection_c.so
+[2.386s] -- Set runtime path of "/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[2.386s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_typesupport_c.so
+[2.386s] -- Set runtime path of "/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_typesupport_c.so" to ""
+[2.386s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces
+[2.386s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg
+[2.386s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[2.386s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/order_log.hpp
+[2.387s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__builder.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__struct.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__traits.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__type_support.hpp
+[2.387s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/check_stock.hpp
+[2.387s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__builder.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__struct.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__traits.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__type_support.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__builder.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__struct.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__traits.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__type_support.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__builder.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__struct.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__traits.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__type_support.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__builder.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__struct.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__traits.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__type_support.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/authorize_payment.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/place_order.hpp
+[2.387s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/discount_apply.hpp
+[2.387s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces
+[2.387s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg
+[2.388s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.388s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail
+[2.388s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__rosidl_typesupport_fastrtps_cpp.hpp
+[2.388s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/dds_fastrtps
+[2.388s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv
+[2.388s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail
+[2.388s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__rosidl_typesupport_fastrtps_cpp.hpp
+[2.388s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/dds_fastrtps
+[2.388s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__rosidl_typesupport_fastrtps_cpp.hpp
+[2.388s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__rosidl_typesupport_fastrtps_cpp.hpp
+[2.388s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__rosidl_typesupport_fastrtps_cpp.hpp
+[2.388s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[2.388s] -- Set runtime path of "/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[2.388s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces
+[2.388s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv
+[2.388s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail
+[2.389s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__rosidl_typesupport_introspection_cpp.hpp
+[2.389s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/check_stock__type_support.cpp
+[2.389s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__rosidl_typesupport_introspection_cpp.hpp
+[2.389s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/authorize_payment__type_support.cpp
+[2.389s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__rosidl_typesupport_introspection_cpp.hpp
+[2.389s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/place_order__type_support.cpp
+[2.389s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__rosidl_typesupport_introspection_cpp.hpp
+[2.389s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/srv/detail/discount_apply__type_support.cpp
+[2.389s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg
+[2.389s] -- Up-to-date: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail
+[2.389s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__rosidl_typesupport_introspection_cpp.hpp
+[2.389s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/include/smart_shop_interfaces/smart_shop_interfaces/msg/detail/order_log__type_support.cpp
+[2.389s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_typesupport_introspection_cpp.so
+[2.390s] -- Set runtime path of "/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_typesupport_cpp.so
+[2.390s] -- Set runtime path of "/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_typesupport_cpp.so" to ""
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/environment/pythonpath.sh
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/environment/pythonpath.dsv
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces-0.0.0-py3.10.egg-info
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/__init__.py
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/_check_stock.py
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/_check_stock_s.c
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/_authorize_payment.py
+[2.390s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/_authorize_payment_s.c
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/_place_order.py
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/_place_order_s.c
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/_discount_apply.py
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/_discount_apply_s.c
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/__init__.py
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/msg
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/msg/_order_log.py
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/msg/_order_log_s.c
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/msg/__init__.py
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_c.c
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/libsmart_shop_interfaces__rosidl_generator_py.so
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/smart_shop_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/smart_shop_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.391s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/smart_shop_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.412s] Listing '/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces'...
+[2.412s] Compiling '/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/__init__.py'...
+[2.412s] Listing '/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/msg'...
+[2.412s] Compiling '/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/msg/__init__.py'...
+[2.412s] Compiling '/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/msg/_order_log.py'...
+[2.413s] Listing '/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv'...
+[2.413s] Compiling '/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/__init__.py'...
+[2.413s] Compiling '/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/_authorize_payment.py'...
+[2.413s] Compiling '/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/_check_stock.py'...
+[2.413s] Compiling '/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/_discount_apply.py'...
+[2.413s] Compiling '/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/srv/_place_order.py'...
+[2.415s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/smart_shop_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[2.415s] -- Set runtime path of "/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/smart_shop_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.415s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/smart_shop_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[2.416s] -- Set runtime path of "/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/smart_shop_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.416s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/smart_shop_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[2.416s] -- Set runtime path of "/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/local/lib/python3.10/dist-packages/smart_shop_interfaces/smart_shop_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[2.416s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_generator_py.so
+[2.416s] -- Set runtime path of "/home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/lib/libsmart_shop_interfaces__rosidl_generator_py.so" to ""
+[2.416s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/CheckStock.idl
+[2.416s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/AuthorizePayment.idl
+[2.416s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/PlaceOrder.idl
+[2.416s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/DiscountApply.idl
+[2.416s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/msg/OrderLog.idl
+[2.416s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/CheckStock.srv
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/CheckStock_Request.msg
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/CheckStock_Response.msg
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/AuthorizePayment.srv
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/AuthorizePayment_Request.msg
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/AuthorizePayment_Response.msg
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/PlaceOrder.srv
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/PlaceOrder_Request.msg
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/PlaceOrder_Response.msg
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/DiscountApply.srv
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/DiscountApply_Request.msg
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/srv/DiscountApply_Response.msg
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/msg/OrderLog.msg
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/ament_index/resource_index/package_run_dependencies/smart_shop_interfaces
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/ament_index/resource_index/parent_prefix_path/smart_shop_interfaces
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/environment/ament_prefix_path.sh
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/environment/ament_prefix_path.dsv
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/environment/path.sh
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/environment/path.dsv
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/local_setup.bash
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/local_setup.sh
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/local_setup.zsh
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/local_setup.dsv
+[2.417s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/package.dsv
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/ament_index/resource_index/packages/smart_shop_interfaces
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/export_smart_shop_interfaces__rosidl_generator_cExport.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/export_smart_shop_interfaces__rosidl_generator_cExport-noconfig.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/export_smart_shop_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/export_smart_shop_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/smart_shop_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/smart_shop_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/smart_shop_interfaces__rosidl_typesupport_cExport.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/smart_shop_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/export_smart_shop_interfaces__rosidl_generator_cppExport.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/export_smart_shop_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/export_smart_shop_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/smart_shop_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/smart_shop_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/smart_shop_interfaces__rosidl_typesupport_cppExport.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/smart_shop_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/export_smart_shop_interfaces__rosidl_generator_pyExport.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/export_smart_shop_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/rosidl_cmake-extras.cmake
+[2.418s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.419s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[2.419s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[2.419s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[2.419s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.419s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[2.419s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/smart_shop_interfacesConfig.cmake
+[2.419s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/cmake/smart_shop_interfacesConfig-version.cmake
+[2.419s] -- Installing: /home/ssu/robotics-practice/class/class03/install/smart_shop_interfaces/share/smart_shop_interfaces/package.xml
+[2.421s] Invoked command in '/home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ssu/robotics-practice/week/week02/svc_ws/install/smart_shop_nodes:/opt/ros/humble /usr/bin/cmake --install /home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces

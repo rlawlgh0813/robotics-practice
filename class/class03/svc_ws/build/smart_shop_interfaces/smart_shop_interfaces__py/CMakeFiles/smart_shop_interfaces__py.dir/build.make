@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces
+CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces
+CMAKE_BINARY_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces
 
 # Utility rule file for smart_shop_interfaces__py.
 
@@ -73,11 +73,14 @@ smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py: rosidl_generator
 smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/srv/_authorize_payment.py
 smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/srv/_place_order.py
 smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/srv/_discount_apply.py
+smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/msg/_order_log.py
 smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/srv/__init__.py
+smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/msg/__init__.py
 smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/srv/_check_stock_s.c
 smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/srv/_authorize_payment_s.c
 smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/srv/_place_order_s.c
 smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/srv/_discount_apply_s.c
+smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c
 
 rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_py/__init__.py
@@ -96,8 +99,9 @@ rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typ
 rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/smart_shop_interfaces/srv/AuthorizePayment.idl
 rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/smart_shop_interfaces/srv/PlaceOrder.idl
 rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/smart_shop_interfaces/srv/DiscountApply.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/smart_shop_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/smart_shop_interfaces/msg/OrderLog.idl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/smart_shop_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_introspection_c.c
@@ -117,8 +121,14 @@ rosidl_generator_py/smart_shop_interfaces/srv/_place_order.py: rosidl_generator_
 rosidl_generator_py/smart_shop_interfaces/srv/_discount_apply.py: rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/smart_shop_interfaces/srv/_discount_apply.py
 
+rosidl_generator_py/smart_shop_interfaces/msg/_order_log.py: rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/smart_shop_interfaces/msg/_order_log.py
+
 rosidl_generator_py/smart_shop_interfaces/srv/__init__.py: rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/smart_shop_interfaces/srv/__init__.py
+
+rosidl_generator_py/smart_shop_interfaces/msg/__init__.py: rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/smart_shop_interfaces/msg/__init__.py
 
 rosidl_generator_py/smart_shop_interfaces/srv/_check_stock_s.c: rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/smart_shop_interfaces/srv/_check_stock_s.c
@@ -132,9 +142,15 @@ rosidl_generator_py/smart_shop_interfaces/srv/_place_order_s.c: rosidl_generator
 rosidl_generator_py/smart_shop_interfaces/srv/_discount_apply_s.c: rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/smart_shop_interfaces/srv/_discount_apply_s.c
 
+rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c: rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c
+
 smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_c.c
 smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/_smart_shop_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/msg/__init__.py
+smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/msg/_order_log.py
+smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/msg/_order_log_s.c
 smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/srv/__init__.py
 smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/srv/_authorize_payment.py
 smart_shop_interfaces__py: rosidl_generator_py/smart_shop_interfaces/srv/_authorize_payment_s.c
@@ -153,10 +169,10 @@ smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py.dir/build: smart_
 .PHONY : smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py.dir/build
 
 smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py.dir/clean:
-	cd /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/smart_shop_interfaces__py && $(CMAKE_COMMAND) -P CMakeFiles/smart_shop_interfaces__py.dir/cmake_clean.cmake
+	cd /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/smart_shop_interfaces__py && $(CMAKE_COMMAND) -P CMakeFiles/smart_shop_interfaces__py.dir/cmake_clean.cmake
 .PHONY : smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py.dir/clean
 
 smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py.dir/depend:
-	cd /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/smart_shop_interfaces__py /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/smart_shop_interfaces__py /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/smart_shop_interfaces__py /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/smart_shop_interfaces__py /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : smart_shop_interfaces__py/CMakeFiles/smart_shop_interfaces__py.dir/depend
 

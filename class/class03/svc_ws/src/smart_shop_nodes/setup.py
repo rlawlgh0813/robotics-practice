@@ -29,6 +29,7 @@ setup(
             'discount_server = smart_shop_nodes.discount_server:main',
             'order_manager = smart_shop_nodes.order_manager:main',
             'order_client = smart_shop_nodes.order_client:main',
+            'log_monitor = smart_shop_nodes.log_monitor:main',
         ],
     },
 )

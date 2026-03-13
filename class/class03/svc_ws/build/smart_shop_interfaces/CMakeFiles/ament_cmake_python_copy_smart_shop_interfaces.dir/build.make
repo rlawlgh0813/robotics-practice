@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces
+CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces
+CMAKE_BINARY_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces
 
 # Utility rule file for ament_cmake_python_copy_smart_shop_interfaces.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_smart_shop_interfaces.dir/compiler_de
 include CMakeFiles/ament_cmake_python_copy_smart_shop_interfaces.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_smart_shop_interfaces:
-	/usr/bin/cmake -E copy_directory /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_py/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/ament_cmake_python/smart_shop_interfaces/smart_shop_interfaces
+	/usr/bin/cmake -E copy_directory /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_py/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/ament_cmake_python/smart_shop_interfaces/smart_shop_interfaces
 
 ament_cmake_python_copy_smart_shop_interfaces: CMakeFiles/ament_cmake_python_copy_smart_shop_interfaces
 ament_cmake_python_copy_smart_shop_interfaces: CMakeFiles/ament_cmake_python_copy_smart_shop_interfaces.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_smart_shop_interfaces.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_smart_shop_interfaces.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_smart_shop_interfaces.dir/depend:
-	cd /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles/ament_cmake_python_copy_smart_shop_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles/ament_cmake_python_copy_smart_shop_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_smart_shop_interfaces.dir/depend
 

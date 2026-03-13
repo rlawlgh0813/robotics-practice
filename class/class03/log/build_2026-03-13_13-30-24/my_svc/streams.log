@@ -1,0 +1,41 @@
+[0.329s] Invoking command in '/home/ssu/robotics-practice/class/class03/test_svc/src/my_svc': PYTHONPATH=/home/ssu/robotics-practice/class/class03/build/my_svc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class03/install/my_svc/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/my_svc build --build-base /home/ssu/robotics-practice/class/class03/build/my_svc/build install --record /home/ssu/robotics-practice/class/class03/build/my_svc/install.log --single-version-externally-managed install_data
+[0.423s] running egg_info
+[0.423s] creating ../../../build/my_svc/my_svc.egg-info
+[0.423s] writing ../../../build/my_svc/my_svc.egg-info/PKG-INFO
+[0.423s] writing dependency_links to ../../../build/my_svc/my_svc.egg-info/dependency_links.txt
+[0.423s] writing entry points to ../../../build/my_svc/my_svc.egg-info/entry_points.txt
+[0.423s] writing requirements to ../../../build/my_svc/my_svc.egg-info/requires.txt
+[0.423s] writing top-level names to ../../../build/my_svc/my_svc.egg-info/top_level.txt
+[0.423s] writing manifest file '../../../build/my_svc/my_svc.egg-info/SOURCES.txt'
+[0.424s] reading manifest file '../../../build/my_svc/my_svc.egg-info/SOURCES.txt'
+[0.424s] writing manifest file '../../../build/my_svc/my_svc.egg-info/SOURCES.txt'
+[0.424s] running build
+[0.424s] running build_py
+[0.424s] creating /home/ssu/robotics-practice/class/class03/build/my_svc/build
+[0.424s] creating /home/ssu/robotics-practice/class/class03/build/my_svc/build/lib
+[0.424s] creating /home/ssu/robotics-practice/class/class03/build/my_svc/build/lib/my_svc
+[0.425s] copying my_svc/__init__.py -> /home/ssu/robotics-practice/class/class03/build/my_svc/build/lib/my_svc
+[0.425s] copying my_svc/my_client.py -> /home/ssu/robotics-practice/class/class03/build/my_svc/build/lib/my_svc
+[0.425s] copying my_svc/my_service.py -> /home/ssu/robotics-practice/class/class03/build/my_svc/build/lib/my_svc
+[0.425s] running install
+[0.425s] running install_lib
+[0.425s] creating /home/ssu/robotics-practice/class/class03/install/my_svc/lib/python3.10/site-packages/my_svc
+[0.425s] copying /home/ssu/robotics-practice/class/class03/build/my_svc/build/lib/my_svc/__init__.py -> /home/ssu/robotics-practice/class/class03/install/my_svc/lib/python3.10/site-packages/my_svc
+[0.425s] copying /home/ssu/robotics-practice/class/class03/build/my_svc/build/lib/my_svc/my_client.py -> /home/ssu/robotics-practice/class/class03/install/my_svc/lib/python3.10/site-packages/my_svc
+[0.425s] copying /home/ssu/robotics-practice/class/class03/build/my_svc/build/lib/my_svc/my_service.py -> /home/ssu/robotics-practice/class/class03/install/my_svc/lib/python3.10/site-packages/my_svc
+[0.425s] byte-compiling /home/ssu/robotics-practice/class/class03/install/my_svc/lib/python3.10/site-packages/my_svc/__init__.py to __init__.cpython-310.pyc
+[0.425s] byte-compiling /home/ssu/robotics-practice/class/class03/install/my_svc/lib/python3.10/site-packages/my_svc/my_client.py to my_client.cpython-310.pyc
+[0.425s] byte-compiling /home/ssu/robotics-practice/class/class03/install/my_svc/lib/python3.10/site-packages/my_svc/my_service.py to my_service.cpython-310.pyc
+[0.425s] running install_data
+[0.425s] creating /home/ssu/robotics-practice/class/class03/install/my_svc/share/ament_index
+[0.425s] creating /home/ssu/robotics-practice/class/class03/install/my_svc/share/ament_index/resource_index
+[0.425s] creating /home/ssu/robotics-practice/class/class03/install/my_svc/share/ament_index/resource_index/packages
+[0.425s] copying resource/my_svc -> /home/ssu/robotics-practice/class/class03/install/my_svc/share/ament_index/resource_index/packages
+[0.425s] copying package.xml -> /home/ssu/robotics-practice/class/class03/install/my_svc/share/my_svc
+[0.425s] running install_egg_info
+[0.427s] Copying ../../../build/my_svc/my_svc.egg-info to /home/ssu/robotics-practice/class/class03/install/my_svc/lib/python3.10/site-packages/my_svc-0.0.0-py3.10.egg-info
+[0.427s] running install_scripts
+[0.439s] Installing client script to /home/ssu/robotics-practice/class/class03/install/my_svc/lib/my_svc
+[0.439s] Installing service script to /home/ssu/robotics-practice/class/class03/install/my_svc/lib/my_svc
+[0.439s] writing list of installed files to '/home/ssu/robotics-practice/class/class03/build/my_svc/install.log'
+[0.447s] Invoked command in '/home/ssu/robotics-practice/class/class03/test_svc/src/my_svc' returned '0': PYTHONPATH=/home/ssu/robotics-practice/class/class03/build/my_svc/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class03/install/my_svc/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/my_svc build --build-base /home/ssu/robotics-practice/class/class03/build/my_svc/build install --record /home/ssu/robotics-practice/class/class03/build/my_svc/install.log --single-version-externally-managed install_data

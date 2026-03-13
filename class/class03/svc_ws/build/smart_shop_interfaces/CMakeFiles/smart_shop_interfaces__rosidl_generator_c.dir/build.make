@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces
+CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces
+CMAKE_BINARY_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces
 
 # Include any dependencies generated for this target.
 include CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend.make
@@ -86,8 +86,9 @@ rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h: rosidl_adapter/smart
 rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h: rosidl_adapter/smart_shop_interfaces/srv/AuthorizePayment.idl
 rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h: rosidl_adapter/smart_shop_interfaces/srv/PlaceOrder.idl
 rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h: rosidl_adapter/smart_shop_interfaces/srv/DiscountApply.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c__arguments.json
+rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h: rosidl_adapter/smart_shop_interfaces/msg/OrderLog.idl
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.h: rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.h
@@ -134,6 +135,18 @@ rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__struct.h: ro
 rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__type_support.h: rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__type_support.h
 
+rosidl_generator_c/smart_shop_interfaces/msg/order_log.h: rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/smart_shop_interfaces/msg/order_log.h
+
+rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.h: rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.h
+
+rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__struct.h: rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__struct.h
+
+rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__type_support.h: rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__type_support.h
+
 rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c: rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c
 
@@ -146,68 +159,86 @@ rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c: ro
 rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c: rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c
 
+rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c: rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c
+
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o: rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o -MF CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o.d -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o -c /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o -MF CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o.d -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o -c /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c
 
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c > CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c > CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.i
 
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.s
 
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o: rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o -MF CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o.d -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o -c /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o -MF CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o.d -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o -c /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c
 
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c > CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c > CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.i
 
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.s
 
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o: rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o -MF CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o.d -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o -c /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o -MF CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o.d -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o -c /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c
 
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c > CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c > CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.i
 
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.s
 
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o: rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o -MF CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o.d -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o -c /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o -MF CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o.d -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o -c /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c
 
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c > CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c > CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.i
 
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.s
+
+CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o: rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c
+CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o -MF CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o.d -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o -c /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c
+
+CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c > CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.i
+
+CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c -o CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.s
 
 # Object files for target smart_shop_interfaces__rosidl_generator_c
 smart_shop_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/check_stock__functions.c.o" \
 "CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o" \
 "CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o" \
-"CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o"
+"CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o" \
+"CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o"
 
 # External object files for target smart_shop_interfaces__rosidl_generator_c
 smart_shop_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -216,11 +247,12 @@ libsmart_shop_interfaces__rosidl_generator_c.so: CMakeFiles/smart_shop_interface
 libsmart_shop_interfaces__rosidl_generator_c.so: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c.o
 libsmart_shop_interfaces__rosidl_generator_c.so: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__functions.c.o
 libsmart_shop_interfaces__rosidl_generator_c.so: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/srv/detail/discount_apply__functions.c.o
+libsmart_shop_interfaces__rosidl_generator_c.so: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c.o
 libsmart_shop_interfaces__rosidl_generator_c.so: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/build.make
 libsmart_shop_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 libsmart_shop_interfaces__rosidl_generator_c.so: /opt/ros/humble/lib/librcutils.so
 libsmart_shop_interfaces__rosidl_generator_c.so: CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C shared library libsmart_shop_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C shared library libsmart_shop_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -231,6 +263,11 @@ CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/clean
 
+CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.c
+CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__functions.h
+CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__struct.h
+CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/smart_shop_interfaces/msg/detail/order_log__type_support.h
+CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/smart_shop_interfaces/msg/order_log.h
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/smart_shop_interfaces/srv/authorize_payment.h
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/smart_shop_interfaces/srv/check_stock.h
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/smart_shop_interfaces/srv/detail/authorize_payment__functions.c
@@ -251,6 +288,6 @@ CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend: rosidl_generato
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/smart_shop_interfaces/srv/detail/place_order__type_support.h
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/smart_shop_interfaces/srv/discount_apply.h
 CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/smart_shop_interfaces/srv/place_order.h
-	cd /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/smart_shop_interfaces__rosidl_generator_c.dir/depend
 

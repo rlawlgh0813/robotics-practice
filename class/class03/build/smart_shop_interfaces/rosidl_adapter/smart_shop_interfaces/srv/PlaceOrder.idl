@@ -1,0 +1,31 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from smart_shop_interfaces/srv/PlaceOrder.srv
+// generated code does not contain a copyright notice
+
+
+module smart_shop_interfaces {
+  module srv {
+    struct PlaceOrder_Request {
+      string order_id;
+
+      string item_id;
+
+      int32 quantity;
+
+      int32 amount;
+
+      string currency;
+    };
+    struct PlaceOrder_Response {
+      boolean success;
+
+      string status;
+
+      string detail;
+
+      int32 remaining_stock;
+
+      string payment_auth_code;
+    };
+  };
+};

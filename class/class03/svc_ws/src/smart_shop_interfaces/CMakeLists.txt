@@ -17,6 +17,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "srv/AuthorizePayment.srv"
   "srv/PlaceOrder.srv"
   "srv/DiscountApply.srv"
+  "msg/OrderLog.msg"
 )
 
 ament_export_dependencies(rosidl_default_runtime)

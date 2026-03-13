@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-473b361e6baf29a11bc6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "smart_shop_interfaces__py",
+					"jsonFile" : "directory-smart_shop_interfaces__py-e29a0fd944eb0e360c0a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces/smart_shop_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "smart_shop_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_smart_shop_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_smart_shop_interfaces_egg-7d815a23506f806b5e3f.json",
+					"name" : "ament_cmake_python_build_smart_shop_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_smart_shop_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_smart_shop_interfaces-976e05fe45e270127705.json",
+					"name" : "ament_cmake_python_copy_smart_shop_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces-ae770f2b91675aca1195.json",
+					"name" : "smart_shop_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces__cpp-06bd027b4a9fdd3f1c60.json",
+					"name" : "smart_shop_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "smart_shop_interfaces__py::@fbe94b37b6b9bbae3d2d",
+					"jsonFile" : "target-smart_shop_interfaces__py-24903963aab8efd80390.json",
+					"name" : "smart_shop_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces__rosidl_generator_c-4df6be0ae0349f7e1426.json",
+					"name" : "smart_shop_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces__rosidl_generator_py-022178972c3d6f52b8fe.json",
+					"name" : "smart_shop_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces__rosidl_typesupport_c-5a57f85037360cdbfbcb.json",
+					"name" : "smart_shop_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces__rosidl_typesupport_c__pyext-7cb2bc892bddc59c55f4.json",
+					"name" : "smart_shop_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces__rosidl_typesupport_cpp-1e660c665b1cff43ec93.json",
+					"name" : "smart_shop_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces__rosidl_typesupport_fastrtps_c-7815df77eb39a6fab72d.json",
+					"name" : "smart_shop_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces__rosidl_typesupport_fastrtps_c__pyext-a9e358d1c825fe07bbf1.json",
+					"name" : "smart_shop_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp-db622cf2660c6a9b0e0c.json",
+					"name" : "smart_shop_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces__rosidl_typesupport_introspection_c-c31dc5af19558ccb9b3b.json",
+					"name" : "smart_shop_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces__rosidl_typesupport_introspection_c__pyext-3b2c1c8b05d1d9e6875c.json",
+					"name" : "smart_shop_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces__rosidl_typesupport_introspection_cpp-f359a4f755bd6fe4dd3e.json",
+					"name" : "smart_shop_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "smart_shop_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-smart_shop_interfaces_uninstall-3e6a326843c602812208.json",
+					"name" : "smart_shop_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-39ed0a8f57c31b56b7e6.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ssu/robotics-practice/class/class03/build/smart_shop_interfaces",
+		"source" : "/home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

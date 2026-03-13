@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from smart_shop_interfaces/srv/CheckStock.srv
+// generated code does not contain a copyright notice
+
+
+module smart_shop_interfaces {
+  module srv {
+    struct CheckStock_Request {
+      string item_id;
+
+      int32 quantity;
+    };
+    struct CheckStock_Response {
+      boolean available;
+
+      int32 remaining;
+
+      string reason;
+    };
+  };
+};

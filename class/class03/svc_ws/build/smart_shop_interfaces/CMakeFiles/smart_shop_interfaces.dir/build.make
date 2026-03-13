@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces
+CMAKE_SOURCE_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces
+CMAKE_BINARY_DIR = /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces
 
 # Utility rule file for smart_shop_interfaces.
 
@@ -66,18 +66,19 @@ include CMakeFiles/smart_shop_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/smart_shop_interfaces.dir/progress.make
 
-CMakeFiles/smart_shop_interfaces: /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces/srv/CheckStock.srv
+CMakeFiles/smart_shop_interfaces: /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces/srv/CheckStock.srv
 CMakeFiles/smart_shop_interfaces: rosidl_cmake/srv/CheckStock_Request.msg
 CMakeFiles/smart_shop_interfaces: rosidl_cmake/srv/CheckStock_Response.msg
-CMakeFiles/smart_shop_interfaces: /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces/srv/AuthorizePayment.srv
+CMakeFiles/smart_shop_interfaces: /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces/srv/AuthorizePayment.srv
 CMakeFiles/smart_shop_interfaces: rosidl_cmake/srv/AuthorizePayment_Request.msg
 CMakeFiles/smart_shop_interfaces: rosidl_cmake/srv/AuthorizePayment_Response.msg
-CMakeFiles/smart_shop_interfaces: /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces/srv/PlaceOrder.srv
+CMakeFiles/smart_shop_interfaces: /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces/srv/PlaceOrder.srv
 CMakeFiles/smart_shop_interfaces: rosidl_cmake/srv/PlaceOrder_Request.msg
 CMakeFiles/smart_shop_interfaces: rosidl_cmake/srv/PlaceOrder_Response.msg
-CMakeFiles/smart_shop_interfaces: /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces/srv/DiscountApply.srv
+CMakeFiles/smart_shop_interfaces: /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces/srv/DiscountApply.srv
 CMakeFiles/smart_shop_interfaces: rosidl_cmake/srv/DiscountApply_Request.msg
 CMakeFiles/smart_shop_interfaces: rosidl_cmake/srv/DiscountApply_Response.msg
+CMakeFiles/smart_shop_interfaces: /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces/msg/OrderLog.msg
 
 smart_shop_interfaces: CMakeFiles/smart_shop_interfaces
 smart_shop_interfaces: CMakeFiles/smart_shop_interfaces.dir/build.make
@@ -92,6 +93,6 @@ CMakeFiles/smart_shop_interfaces.dir/clean:
 .PHONY : CMakeFiles/smart_shop_interfaces.dir/clean
 
 CMakeFiles/smart_shop_interfaces.dir/depend:
-	cd /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/week/week02/svc_ws/build/smart_shop_interfaces/CMakeFiles/smart_shop_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/src/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces /home/ssu/robotics-practice/class/class03/svc_ws/build/smart_shop_interfaces/CMakeFiles/smart_shop_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/smart_shop_interfaces.dir/depend
 

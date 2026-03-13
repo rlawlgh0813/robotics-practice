@@ -1,0 +1,4 @@
+[console_scripts]
+client = my_svc.my_client:main
+service = my_svc.my_service:main
+
