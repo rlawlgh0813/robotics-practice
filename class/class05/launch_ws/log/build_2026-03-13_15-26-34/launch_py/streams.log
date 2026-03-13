@@ -1,0 +1,35 @@
+[0.273s] Invoking command in '/home/ssu/robotics-practice/class/class05/launch_ws/src/launch_py': PYTHONPATH=/home/ssu/robotics-practice/class/class05/launch_ws/build/launch_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launch_py build --build-base /home/ssu/robotics-practice/class/class05/launch_ws/build/launch_py/build install --record /home/ssu/robotics-practice/class/class05/launch_ws/build/launch_py/install.log --single-version-externally-managed install_data
+[0.372s] running egg_info
+[0.372s] creating ../../build/launch_py/launch_py.egg-info
+[0.372s] writing ../../build/launch_py/launch_py.egg-info/PKG-INFO
+[0.372s] writing dependency_links to ../../build/launch_py/launch_py.egg-info/dependency_links.txt
+[0.372s] writing entry points to ../../build/launch_py/launch_py.egg-info/entry_points.txt
+[0.372s] writing requirements to ../../build/launch_py/launch_py.egg-info/requires.txt
+[0.372s] writing top-level names to ../../build/launch_py/launch_py.egg-info/top_level.txt
+[0.372s] writing manifest file '../../build/launch_py/launch_py.egg-info/SOURCES.txt'
+[0.373s] reading manifest file '../../build/launch_py/launch_py.egg-info/SOURCES.txt'
+[0.373s] writing manifest file '../../build/launch_py/launch_py.egg-info/SOURCES.txt'
+[0.373s] running build
+[0.373s] running build_py
+[0.373s] creating /home/ssu/robotics-practice/class/class05/launch_ws/build/launch_py/build
+[0.373s] creating /home/ssu/robotics-practice/class/class05/launch_ws/build/launch_py/build/lib
+[0.373s] creating /home/ssu/robotics-practice/class/class05/launch_ws/build/launch_py/build/lib/launch_py
+[0.373s] copying launch_py/__init__.py -> /home/ssu/robotics-practice/class/class05/launch_ws/build/launch_py/build/lib/launch_py
+[0.373s] running install
+[0.373s] running install_lib
+[0.374s] creating /home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/lib/python3.10/site-packages/launch_py
+[0.374s] copying /home/ssu/robotics-practice/class/class05/launch_ws/build/launch_py/build/lib/launch_py/__init__.py -> /home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/lib/python3.10/site-packages/launch_py
+[0.374s] byte-compiling /home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/lib/python3.10/site-packages/launch_py/__init__.py to __init__.cpython-310.pyc
+[0.374s] running install_data
+[0.374s] creating /home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/share/ament_index
+[0.374s] creating /home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/share/ament_index/resource_index
+[0.374s] creating /home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/share/ament_index/resource_index/packages
+[0.374s] copying resource/launch_py -> /home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/share/ament_index/resource_index/packages
+[0.374s] copying package.xml -> /home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/share/launch_py
+[0.374s] creating /home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/share/launch_py/launch
+[0.374s] copying launch/my_script_launch.py -> /home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/share/launch_py/launch
+[0.374s] running install_egg_info
+[0.374s] Copying ../../build/launch_py/launch_py.egg-info to /home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/lib/python3.10/site-packages/launch_py-0.0.0-py3.10.egg-info
+[0.374s] running install_scripts
+[0.384s] writing list of installed files to '/home/ssu/robotics-practice/class/class05/launch_ws/build/launch_py/install.log'
+[0.394s] Invoked command in '/home/ssu/robotics-practice/class/class05/launch_ws/src/launch_py' returned '0': PYTHONPATH=/home/ssu/robotics-practice/class/class05/launch_ws/build/launch_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class05/launch_ws/install/launch_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/launch_py build --build-base /home/ssu/robotics-practice/class/class05/launch_ws/build/launch_py/build install --record /home/ssu/robotics-practice/class/class05/launch_ws/build/launch_py/install.log --single-version-externally-managed install_data

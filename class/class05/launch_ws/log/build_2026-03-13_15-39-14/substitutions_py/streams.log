@@ -1,0 +1,20 @@
+[0.372s] Invoking command in '/home/ssu/robotics-practice/class/class05/launch_ws/src/substitutions_py': PYTHONPATH=/home/ssu/robotics-practice/class/class05/launch_ws/build/substitutions_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class05/launch_ws/install/substitutions_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/substitutions_py build --build-base /home/ssu/robotics-practice/class/class05/launch_ws/build/substitutions_py/build install --record /home/ssu/robotics-practice/class/class05/launch_ws/build/substitutions_py/install.log --single-version-externally-managed install_data
+[0.469s] running egg_info
+[0.469s] writing ../../build/substitutions_py/substitutions_py.egg-info/PKG-INFO
+[0.469s] writing dependency_links to ../../build/substitutions_py/substitutions_py.egg-info/dependency_links.txt
+[0.469s] writing entry points to ../../build/substitutions_py/substitutions_py.egg-info/entry_points.txt
+[0.470s] writing requirements to ../../build/substitutions_py/substitutions_py.egg-info/requires.txt
+[0.470s] writing top-level names to ../../build/substitutions_py/substitutions_py.egg-info/top_level.txt
+[0.470s] reading manifest file '../../build/substitutions_py/substitutions_py.egg-info/SOURCES.txt'
+[0.471s] writing manifest file '../../build/substitutions_py/substitutions_py.egg-info/SOURCES.txt'
+[0.471s] running build
+[0.471s] running build_py
+[0.472s] running install
+[0.472s] running install_lib
+[0.472s] running install_data
+[0.472s] running install_egg_info
+[0.473s] removing '/home/ssu/robotics-practice/class/class05/launch_ws/install/substitutions_py/lib/python3.10/site-packages/substitutions_py-0.0.0-py3.10.egg-info' (and everything under it)
+[0.473s] Copying ../../build/substitutions_py/substitutions_py.egg-info to /home/ssu/robotics-practice/class/class05/launch_ws/install/substitutions_py/lib/python3.10/site-packages/substitutions_py-0.0.0-py3.10.egg-info
+[0.473s] running install_scripts
+[0.488s] writing list of installed files to '/home/ssu/robotics-practice/class/class05/launch_ws/build/substitutions_py/install.log'
+[0.511s] Invoked command in '/home/ssu/robotics-practice/class/class05/launch_ws/src/substitutions_py' returned '0': PYTHONPATH=/home/ssu/robotics-practice/class/class05/launch_ws/build/substitutions_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class05/launch_ws/install/substitutions_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/substitutions_py build --build-base /home/ssu/robotics-practice/class/class05/launch_ws/build/substitutions_py/build install --record /home/ssu/robotics-practice/class/class05/launch_ws/build/substitutions_py/install.log --single-version-externally-managed install_data
