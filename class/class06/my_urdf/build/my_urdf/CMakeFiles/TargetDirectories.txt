@@ -1,0 +1,9 @@
+/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf/CMakeFiles/uninstall.dir
+/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf/CMakeFiles/my_urdf_uninstall.dir
+/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf/CMakeFiles/test.dir
+/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf/CMakeFiles/edit_cache.dir
+/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf/CMakeFiles/rebuild_cache.dir
+/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf/CMakeFiles/list_install_components.dir
+/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf/CMakeFiles/install.dir
+/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf/CMakeFiles/install/local.dir
+/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf/CMakeFiles/install/strip.dir

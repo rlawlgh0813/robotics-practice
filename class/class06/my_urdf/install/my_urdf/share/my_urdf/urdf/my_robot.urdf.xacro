@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Properties -->
+  <xacro:property name="base_radius" value="0.15"/>
+  <xacro:property name="base_length" value="0.4"/>
+  <xacro:property name="head_radius" value="0.12"/>
+  <xacro:property name="arm_length" value="0.4"/>
+  <xacro:property name="arm_width" value="0.08"/>
+  <xacro:property name="arm_height" value="0.08"/>
+
+  <!-- Global Materials -->
+  <material name="blue">
+    <color rgba="0 0 0.8 1"/>
+  </material>
+
+  <material name="white">
+    <color rgba="1 1 1 1"/>
+  </material>
+
+  <material name="red">
+    <color rgba="0.8 0 0 1"/>
+  </material>
+
+  <!-- Reusable inertial macro -->
+  <xacro:macro name="unit_inertial">
+    <inertial>
+      <mass value="1"/>
+      <inertia ixx="1e-3" ixy="0" ixz="0"
+               iyy="1e-3" iyz="0"
+               izz="1e-3"/>
+    </inertial>
+  </xacro:macro>
+
+  <!-- Arm macro -->
+  <xacro:macro name="arm" params="name y_pos">
+    <link name="${name}">
+      <visual>
+        <origin xyz="${arm_length/2} 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${arm_length} ${arm_width} ${arm_height}"/>
+        </geometry>
+        <material name="red"/>
+      </visual>
+      <collision>
+        <origin xyz="${arm_length/2} 0 0" rpy="0 0 0"/>
+        <geometry>
+          <box size="${arm_length} ${arm_width} ${arm_height}"/>
+        </geometry>
+      </collision>
+      <xacro:unit_inertial/>
+    </link>
+
+    <joint name="base_to_${name}" type="revolute">
+      <parent link="base_link"/>
+      <child link="${name}"/>
+      <origin xyz="0 ${y_pos} 0.1" rpy="0 0 0"/>
+      <axis xyz="1 0 0"/>
+      <limit lower="-1.57" upper="1.57" effort="10" velocity="1.0"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- base_link -->
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder radius="${base_radius}" length="${base_length}"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="${base_radius}" length="${base_length}"/>
+      </geometry>
+    </collision>
+    <xacro:unit_inertial/>
+  </link>
+
+  <!-- head -->
+  <link name="head">
+    <visual>
+      <geometry>
+        <sphere radius="${head_radius}"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="${head_radius}"/>
+      </geometry>
+    </collision>
+    <xacro:unit_inertial/>
+  </link>
+
+  <!-- base -> head -->
+  <joint name="base_to_head" type="fixed">
+    <parent link="base_link"/>
+    <child link="head"/>
+    <origin xyz="0 0 0.3" rpy="0 0 0"/>
+  </joint>
+
+  <!-- arms -->
+  <xacro:arm name="left_arm" y_pos="0.2"/>
+  <xacro:arm name="right_arm" y_pos="-0.2"/>
+
+</robot>
