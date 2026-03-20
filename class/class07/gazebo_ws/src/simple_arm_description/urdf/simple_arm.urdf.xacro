@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<robot name="simple_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ====== Materials ====== -->
+  <material name="gray">   <color rgba="0.6 0.6 0.6 1"/></material>
+  <material name="blue">   <color rgba="0.2 0.2 0.9 1"/></material>
+  <material name="orange"> <color rgba="0.95 0.55 0.1 1"/></material>
+
+  <!-- ====== Link dimensions & masses ====== -->
+  <xacro:property name="base_lx"    value="0.20"/>
+  <xacro:property name="base_ly"    value="0.20"/>
+  <xacro:property name="base_lz"    value="0.05"/>
+  <xacro:property name="base_mass"  value="10.0"/>
+
+  <xacro:property name="link1_lx"   value="0.40"/>
+  <xacro:property name="link1_ly"   value="0.06"/>
+  <xacro:property name="link1_lz"   value="0.06"/>
+  <xacro:property name="link1_mass" value="1.0"/>
+
+  <xacro:property name="link2_lx"   value="0.30"/>
+  <xacro:property name="link2_ly"   value="0.05"/>
+  <xacro:property name="link2_lz"   value="0.05"/>
+  <xacro:property name="link2_mass" value="0.7"/>
+
+  <xacro:property name="link3_lx"   value="0.24"/>
+  <xacro:property name="link3_ly"   value="0.04"/>
+  <xacro:property name="link3_lz"   value="0.04"/>
+  <xacro:property name="link3_mass" value="0.4"/>
+
+  <!-- ====== Joint defaults ====== -->
+  <xacro:property name="limit_std" value="1.57"/>
+  <xacro:property name="vel_std"   value="1.5"/>
+  <xacro:property name="damp_std"  value="0.5"/>
+  <xacro:property name="fric_std"  value="0.05"/>
+
+  <!-- ====== Macros ====== -->
+  <!--
+    box_link: 박스 형태 링크 (visual + collision + inertial 자동 계산)
+    CoM 위치(ox, oy, oz)는 링크 프레임 기준 오프셋.
+    관성 텐서는 균일 박스 공식으로 계산.
+  -->
+  <xacro:macro name="box_link" params="name ox oy oz lx ly lz mass color">
+    <link name="${name}">
+      <visual>
+        <origin xyz="${ox} ${oy} ${oz}" rpy="0 0 0"/>
+        <geometry><box size="${lx} ${ly} ${lz}"/></geometry>
+        <material name="${color}"/>
+      </visual>
+      <collision>
+        <origin xyz="${ox} ${oy} ${oz}" rpy="0 0 0"/>
+        <geometry><box size="${lx} ${ly} ${lz}"/></geometry>
+      </collision>
+      <inertial>
+        <origin xyz="${ox} ${oy} ${oz}" rpy="0 0 0"/>
+        <mass value="${mass}"/>
+        <inertia
+          ixx="${mass / 12.0 * (ly*ly + lz*lz)}" ixy="0" ixz="0"
+          iyy="${mass / 12.0 * (lx*lx + lz*lz)}" iyz="0"
+          izz="${mass / 12.0 * (lx*lx + ly*ly)}"/>
+      </inertial>
+    </link>
+  </xacro:macro>
+
+  <!--
+    revolute_joint: 표준 회전 조인트
+  -->
+  <xacro:macro name="revolute_joint" params="name parent child xyz axis lower upper effort">
+    <joint name="${name}" type="revolute">
+      <parent link="${parent}"/>
+      <child link="${child}"/>
+      <origin xyz="${xyz}" rpy="0 0 0"/>
+      <axis xyz="${axis}"/>
+      <limit lower="${lower}" upper="${upper}" effort="${effort}" velocity="${vel_std}"/>
+      <dynamics damping="${damp_std}" friction="${fric_std}"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- world anchor -->
+  <link name="world"/>
+  <joint name="world_joint" type="fixed">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
+
+  <!-- ====== Links ====== -->
+  <xacro:box_link name="base_link"
+    ox="0" oy="0" oz="${base_lz / 2}"
+    lx="${base_lx}" ly="${base_ly}" lz="${base_lz}"
+    mass="${base_mass}" color="gray"/>
+
+  <!-- link1_yaw: z축 회전을 위한 더미 링크 (Gazebo가 제거하지 않도록 최소 geometry 포함) -->
+  <link name="link1_yaw">
+    <visual><origin xyz="0 0 0" rpy="0 0 0"/><geometry><sphere radius="0.005"/></geometry><material name="gray"/></visual>
+    <collision><origin xyz="0 0 0" rpy="0 0 0"/><geometry><sphere radius="0.005"/></geometry></collision>
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+    </inertial>
+  </link>
+
+  <xacro:box_link name="link1"
+    ox="${link1_lx / 2}" oy="0" oz="0.05"
+    lx="${link1_lx}" ly="${link1_ly}" lz="${link1_lz}"
+    mass="${link1_mass}" color="blue"/>
+
+  <xacro:box_link name="link2"
+    ox="${link2_lx / 2}" oy="0" oz="0.05"
+    lx="${link2_lx}" ly="${link2_ly}" lz="${link2_lz}"
+    mass="${link2_mass}" color="orange"/>
+
+  <xacro:box_link name="link3"
+    ox="${link3_lx / 2}" oy="0" oz="0.05"
+    lx="${link3_lx}" ly="${link3_ly}" lz="${link3_lz}"
+    mass="${link3_mass}" color="blue"/>
+
+  <!-- ====== Joints ====== -->
+  <xacro:revolute_joint name="joint1_z"
+    parent="base_link" child="link1_yaw"
+    xyz="0 0 ${base_lz}" axis="0 0 1"
+    lower="-${limit_std}" upper="${limit_std}" effort="10"/>
+
+  <xacro:revolute_joint name="joint1_y"
+    parent="link1_yaw" child="link1"
+    xyz="0 0 0" axis="0 -1 0"
+    lower="0.0" upper="${limit_std}" effort="10"/>
+
+  <xacro:revolute_joint name="joint2"
+    parent="link1" child="link2"
+    xyz="${link1_lx} 0 0" axis="0 1 0"
+    lower="-${limit_std}" upper="${limit_std}" effort="10"/>
+
+  <xacro:revolute_joint name="joint3"
+    parent="link2" child="link3"
+    xyz="${link2_lx} 0 0" axis="0 1 0"
+    lower="-${limit_std}" upper="${limit_std}" effort="8"/>
+
+  <!-- ====== Gazebo ====== -->
+  <gazebo reference="base_link">
+    <mu1>1.0</mu1>
+    <mu2>1.0</mu2>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+      <robot_param>robot_description</robot_param>
+      <robot_param_node>robot_state_publisher</robot_param_node>
+      <parameters>$(find simple_arm_description)/config/controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+  <!-- ====== ros2_control ====== -->
+  <ros2_control name="SimpleArmSystem" type="system">
+    <hardware>
+      <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+    </hardware>
+
+    <joint name="joint1_z">
+      <command_interface name="effort"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="joint1_y">
+      <command_interface name="effort"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="joint2">
+      <command_interface name="effort"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+
+    <joint name="joint3">
+      <command_interface name="effort"/>
+      <state_interface name="position"/>
+      <state_interface name="velocity"/>
+    </joint>
+  </ros2_control>
+</robot>

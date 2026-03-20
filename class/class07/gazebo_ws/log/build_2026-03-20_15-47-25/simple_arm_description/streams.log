@@ -1,0 +1,20 @@
+[0.263s] Invoking command in '/home/ssu/robotics-practice/class/class07/gazebo_ws/src/simple_arm_description': PYTHONPATH=/home/ssu/robotics-practice/class/class07/gazebo_ws/build/simple_arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class07/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_arm_description build --build-base /home/ssu/robotics-practice/class/class07/gazebo_ws/build/simple_arm_description/build install --record /home/ssu/robotics-practice/class/class07/gazebo_ws/build/simple_arm_description/install.log --single-version-externally-managed install_data
+[0.364s] running egg_info
+[0.364s] writing ../../build/simple_arm_description/simple_arm_description.egg-info/PKG-INFO
+[0.364s] writing dependency_links to ../../build/simple_arm_description/simple_arm_description.egg-info/dependency_links.txt
+[0.364s] writing entry points to ../../build/simple_arm_description/simple_arm_description.egg-info/entry_points.txt
+[0.364s] writing requirements to ../../build/simple_arm_description/simple_arm_description.egg-info/requires.txt
+[0.364s] writing top-level names to ../../build/simple_arm_description/simple_arm_description.egg-info/top_level.txt
+[0.364s] reading manifest file '../../build/simple_arm_description/simple_arm_description.egg-info/SOURCES.txt'
+[0.364s] writing manifest file '../../build/simple_arm_description/simple_arm_description.egg-info/SOURCES.txt'
+[0.365s] running build
+[0.365s] running build_py
+[0.365s] running install
+[0.365s] running install_lib
+[0.365s] running install_data
+[0.365s] running install_egg_info
+[0.366s] removing '/home/ssu/robotics-practice/class/class07/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages/simple_arm_description-0.0.0-py3.10.egg-info' (and everything under it)
+[0.366s] Copying ../../build/simple_arm_description/simple_arm_description.egg-info to /home/ssu/robotics-practice/class/class07/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages/simple_arm_description-0.0.0-py3.10.egg-info
+[0.366s] running install_scripts
+[0.377s] writing list of installed files to '/home/ssu/robotics-practice/class/class07/gazebo_ws/build/simple_arm_description/install.log'
+[0.388s] Invoked command in '/home/ssu/robotics-practice/class/class07/gazebo_ws/src/simple_arm_description' returned '0': PYTHONPATH=/home/ssu/robotics-practice/class/class07/gazebo_ws/build/simple_arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class07/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_arm_description build --build-base /home/ssu/robotics-practice/class/class07/gazebo_ws/build/simple_arm_description/build install --record /home/ssu/robotics-practice/class/class07/gazebo_ws/build/simple_arm_description/install.log --single-version-externally-managed install_data

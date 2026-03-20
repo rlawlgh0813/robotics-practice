@@ -1,0 +1,5 @@
+[console_scripts]
+arm_sequencer = simple_arm_description.arm_sequencer:main
+auto_stop = simple_arm_description.auto_stop:main
+joint_monitor = simple_arm_description.joint_monitor:main
+

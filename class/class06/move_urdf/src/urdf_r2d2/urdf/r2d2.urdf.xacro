@@ -20,7 +20,7 @@
 
   <xacro:property name="leg_size" value="0.20 0.10 0.8"/>
   <xacro:property name="leg_origin" value="0 0 -0.3"/>
-  <xacro:property name="leg_y" value="0.30"/>
+  <xacro:property name="leg_y" value="0.40"/>
 
   <xacro:property name="body_radius" value="0.20"/>
   <xacro:property name="body_length" value="0.6"/>
@@ -113,7 +113,7 @@
   <link name="head">
     <xacro:unit_inertial/>
     <visual>
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="0 0 0.35" rpy="0 0 0"/>
       <geometry><sphere radius="${head_radius}"/></geometry>
       <material name="white"/>
     </visual>
