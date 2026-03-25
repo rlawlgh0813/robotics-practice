@@ -96,4 +96,5 @@ def generate_launch_description():
         rsp,
         TimerAction(period=5.0, actions=[spawn]),
         load_controllers,
+        #arm_sequencer
     ])
