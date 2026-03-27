@@ -24,11 +24,14 @@ class WaypointActionFollower(Node):
 
         self.joint_names = ["joint1_z", "joint1_y", "joint2", "joint3"]
 
+        # 시작점 -> 4개의 꼭짓점 -> 시작점 복귀
+        # joint1_z, joint1_y 값을 중심으로 사각형처럼 보이도록 구성
         self.waypoints = [
-            [0.0, 0.10,  0.0, 0.0],
-            [0.2, 0.30,  0.0, 0.0],
-            [0.0, 0.40, -0.2, 0.0],
-            [-0.2, 0.20, 0.0, 0.0],
+            [0.00, 0.30, 0.00, 0.00],   # 시작점
+            [0.40, 0.30, 0.00, 0.00],   # 오른쪽
+            [0.40, 0.55, 0.00, 0.00],   # 오른쪽 위
+            [0.00, 0.55, 0.00, 0.00],   # 왼쪽 위
+            [0.00, 0.30, 0.00, 0.00],   # 시작점 복귀
         ]
 
         self.action_name = f"/{self.controller_name}/follow_joint_trajectory"
@@ -36,9 +39,9 @@ class WaypointActionFollower(Node):
 
         self._retry_timer = None
         self._hold_timer = None
-        self._in_flight = False  # 실행 중인 goal이 있으면 True
+        self._in_flight = False
 
-        self.get_logger().info(f"Action: {self.action_name}")
+        self.get_logger().info(f"Action server: {self.action_name}")
         self._try_send()
 
     def _build_goal(self) -> FollowJointTrajectory.Goal:
@@ -46,19 +49,23 @@ class WaypointActionFollower(Node):
         goal.trajectory.joint_names = self.joint_names
 
         t = 0.0
-        for pos in self.waypoints:
+        for positions in self.waypoints:
             t += self.segment_time
-            pt = JointTrajectoryPoint()
-            pt.positions = pos
+
+            point = JointTrajectoryPoint()
+            point.positions = positions
+            point.velocities = [0.0] * len(self.joint_names)
+            point.accelerations = [0.0] * len(self.joint_names)
+
             sec = int(t)
-            nsec = int((t - sec) * 1e9)
-            pt.time_from_start = Duration(sec=sec, nanosec=nsec)
-            goal.trajectory.points.append(pt)
+            nanosec = int((t - sec) * 1e9)
+            point.time_from_start = Duration(sec=sec, nanosec=nanosec)
+
+            goal.trajectory.points.append(point)
 
         return goal
 
     def _try_send(self):
-        # 이미 실행 중이면 절대 새 goal을 보내지 않음
         if self._in_flight:
             return
 
@@ -68,18 +75,18 @@ class WaypointActionFollower(Node):
                 self._retry_timer = self.create_timer(0.5, self._retry_cb)
             return
 
-        # 서버가 뜨면 retry 타이머 정리
         if self._retry_timer is not None:
             self._retry_timer.cancel()
             self._retry_timer = None
 
         goal = self._build_goal()
         self.get_logger().info(
-            f"Send trajectory: points={len(goal.trajectory.points)}, segment_time={self.segment_time}s"
+            f"Send trajectory: {len(goal.trajectory.points)} points, "
+            f"segment_time={self.segment_time}s"
         )
 
-        fut = self.client.send_goal_async(goal)
-        fut.add_done_callback(self._on_goal_response)
+        future = self.client.send_goal_async(goal)
+        future.add_done_callback(self._on_goal_response)
 
     def _retry_cb(self):
         self._try_send()
@@ -87,41 +94,42 @@ class WaypointActionFollower(Node):
     def _on_goal_response(self, future):
         goal_handle = future.result()
         if goal_handle is None or not goal_handle.accepted:
-            self.get_logger().error("Goal rejected.")
+            self.get_logger().error("Goal rejected")
             self._schedule_next(1.0)
             return
 
         self._in_flight = True
-        self.get_logger().info("Goal accepted. Waiting result...")
-        res_fut = goal_handle.get_result_async()
-        res_fut.add_done_callback(self._on_result)
+        self.get_logger().info("Goal accepted. Waiting for result...")
+        result_future = goal_handle.get_result_async()
+        result_future.add_done_callback(self._on_result)
 
     def _on_result(self, future):
         result = future.result()
         self._in_flight = False
 
         if result is None:
-            self.get_logger().error("No result received.")
+            self.get_logger().error("No result received")
             self._schedule_next(1.0)
             return
 
-        self.get_logger().info(f"Trajectory done. status={result.status}. Repeat after {self.hold_time}s")
+        self.get_logger().info(
+            f"Trajectory finished. status={result.status}. "
+            f"Repeat after {self.hold_time}s"
+        )
         self._schedule_next(self.hold_time)
 
     def _schedule_next(self, delay_sec: float):
-        # 한 번만 실행되는 hold 타이머를 구현 (기존 타이머 있으면 제거)
         if self._hold_timer is not None:
             self._hold_timer.cancel()
             self._hold_timer = None
 
-        def _cb():
-            # callback 첫 줄에서 자기 타이머를 끊어 “one-shot”으로 만듦
+        def _callback():
             if self._hold_timer is not None:
                 self._hold_timer.cancel()
                 self._hold_timer = None
             self._try_send()
 
-        self._hold_timer = self.create_timer(delay_sec, _cb)
+        self._hold_timer = self.create_timer(delay_sec, _callback)
 
 
 def main():
@@ -131,8 +139,9 @@ def main():
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
-    node.destroy_node()
-    rclpy.shutdown()
+    finally:
+        node.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == "__main__":

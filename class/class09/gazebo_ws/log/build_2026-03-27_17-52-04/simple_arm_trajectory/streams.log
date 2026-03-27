@@ -1,0 +1,28 @@
+[0.407s] Invoking command in '/home/ssu/robotics-practice/class/class09/gazebo_ws/src/simple_arm_trajectory': PYTHONPATH=/home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_trajectory/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_trajectory/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_arm_trajectory build --build-base /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_trajectory/build install --record /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_trajectory/install.log --single-version-externally-managed install_data
+[0.514s] running egg_info
+[0.514s] writing ../../build/simple_arm_trajectory/simple_arm_trajectory.egg-info/PKG-INFO
+[0.514s] writing dependency_links to ../../build/simple_arm_trajectory/simple_arm_trajectory.egg-info/dependency_links.txt
+[0.514s] writing entry points to ../../build/simple_arm_trajectory/simple_arm_trajectory.egg-info/entry_points.txt
+[0.514s] writing requirements to ../../build/simple_arm_trajectory/simple_arm_trajectory.egg-info/requires.txt
+[0.514s] writing top-level names to ../../build/simple_arm_trajectory/simple_arm_trajectory.egg-info/top_level.txt
+[0.515s] reading manifest file '../../build/simple_arm_trajectory/simple_arm_trajectory.egg-info/SOURCES.txt'
+[0.515s] writing manifest file '../../build/simple_arm_trajectory/simple_arm_trajectory.egg-info/SOURCES.txt'
+[0.515s] running build
+[0.515s] running build_py
+[0.516s] copying simple_arm_trajectory/repeat_monitor.py -> /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_trajectory/build/lib/simple_arm_trajectory
+[0.516s] running install
+[0.516s] running install_lib
+[0.516s] copying /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_trajectory/build/lib/simple_arm_trajectory/repeat_monitor.py -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_trajectory/lib/python3.10/site-packages/simple_arm_trajectory
+[0.517s] byte-compiling /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_trajectory/lib/python3.10/site-packages/simple_arm_trajectory/repeat_monitor.py to repeat_monitor.cpython-310.pyc
+[0.517s] running install_data
+[0.517s] running install_egg_info
+[0.519s] removing '/home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_trajectory/lib/python3.10/site-packages/simple_arm_trajectory-0.0.0-py3.10.egg-info' (and everything under it)
+[0.519s] Copying ../../build/simple_arm_trajectory/simple_arm_trajectory.egg-info to /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_trajectory/lib/python3.10/site-packages/simple_arm_trajectory-0.0.0-py3.10.egg-info
+[0.519s] running install_scripts
+[0.528s] Installing controller_state_monitor script to /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_trajectory/lib/simple_arm_trajectory
+[0.529s] Installing repeat_monitor script to /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_trajectory/lib/simple_arm_trajectory
+[0.529s] Installing send_waypoint script to /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_trajectory/lib/simple_arm_trajectory
+[0.529s] Installing trajectory_monitor script to /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_trajectory/lib/simple_arm_trajectory
+[0.529s] Installing waypoint_action_follower script to /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_trajectory/lib/simple_arm_trajectory
+[0.529s] writing list of installed files to '/home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_trajectory/install.log'
+[0.542s] Invoked command in '/home/ssu/robotics-practice/class/class09/gazebo_ws/src/simple_arm_trajectory' returned '0': PYTHONPATH=/home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_trajectory/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_trajectory/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_arm_trajectory build --build-base /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_trajectory/build install --record /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_trajectory/install.log --single-version-externally-managed install_data
