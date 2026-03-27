@@ -1,0 +1,5 @@
+[console_scripts]
+controller_state_monitor = simple_arm_trajectory.controller_state_monitor:main
+send_waypoint = simple_arm_trajectory.send_waypoint:main
+waypoint_action_follower = simple_arm_trajectory.waypoint_action_follower:main
+

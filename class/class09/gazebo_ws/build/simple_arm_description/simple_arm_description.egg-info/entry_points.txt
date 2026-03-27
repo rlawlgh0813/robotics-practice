@@ -1,0 +1,6 @@
+[console_scripts]
+joint_monitor = simple_arm_description.joint_monitor:main
+state_monitor = simple_arm_description.state_monitor:main
+trajectory_publisher = simple_arm_description.trajectory_publisher:main
+waypoint_sequencer = simple_arm_description.waypoint_sequencer:main
+

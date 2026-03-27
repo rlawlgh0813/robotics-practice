@@ -1,0 +1,60 @@
+[0.273s] Invoking command in '/home/ssu/robotics-practice/class/class09/gazebo_ws/src/simple_arm_description': PYTHONPATH=/home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_arm_description build --build-base /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build install --record /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/install.log --single-version-externally-managed install_data
+[0.370s] running egg_info
+[0.370s] creating ../../build/simple_arm_description/simple_arm_description.egg-info
+[0.370s] writing ../../build/simple_arm_description/simple_arm_description.egg-info/PKG-INFO
+[0.370s] writing dependency_links to ../../build/simple_arm_description/simple_arm_description.egg-info/dependency_links.txt
+[0.370s] writing entry points to ../../build/simple_arm_description/simple_arm_description.egg-info/entry_points.txt
+[0.370s] writing requirements to ../../build/simple_arm_description/simple_arm_description.egg-info/requires.txt
+[0.371s] writing top-level names to ../../build/simple_arm_description/simple_arm_description.egg-info/top_level.txt
+[0.371s] writing manifest file '../../build/simple_arm_description/simple_arm_description.egg-info/SOURCES.txt'
+[0.371s] reading manifest file '../../build/simple_arm_description/simple_arm_description.egg-info/SOURCES.txt'
+[0.371s] writing manifest file '../../build/simple_arm_description/simple_arm_description.egg-info/SOURCES.txt'
+[0.371s] running build
+[0.371s] running build_py
+[0.371s] creating /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build
+[0.371s] creating /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build/lib
+[0.371s] creating /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build/lib/simple_arm_description
+[0.371s] copying simple_arm_description/__init__.py -> /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build/lib/simple_arm_description
+[0.372s] copying simple_arm_description/state_monitor.py -> /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build/lib/simple_arm_description
+[0.372s] copying simple_arm_description/trajectory_publisher.py -> /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build/lib/simple_arm_description
+[0.372s] copying simple_arm_description/waypoint_sequencer.py -> /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build/lib/simple_arm_description
+[0.372s] running install
+[0.372s] running install_lib
+[0.372s] creating /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages/simple_arm_description
+[0.372s] copying /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build/lib/simple_arm_description/__init__.py -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages/simple_arm_description
+[0.372s] copying /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build/lib/simple_arm_description/state_monitor.py -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages/simple_arm_description
+[0.372s] copying /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build/lib/simple_arm_description/trajectory_publisher.py -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages/simple_arm_description
+[0.372s] copying /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build/lib/simple_arm_description/waypoint_sequencer.py -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages/simple_arm_description
+[0.372s] byte-compiling /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages/simple_arm_description/__init__.py to __init__.cpython-310.pyc
+[0.372s] byte-compiling /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages/simple_arm_description/state_monitor.py to state_monitor.cpython-310.pyc
+[0.372s] byte-compiling /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages/simple_arm_description/trajectory_publisher.py to trajectory_publisher.cpython-310.pyc
+[0.372s] byte-compiling /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages/simple_arm_description/waypoint_sequencer.py to waypoint_sequencer.cpython-310.pyc
+[0.373s] running install_data
+[0.373s] creating /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/ament_index
+[0.373s] creating /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/ament_index/resource_index
+[0.373s] creating /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/ament_index/resource_index/packages
+[0.373s] copying resource/simple_arm_description -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/ament_index/resource_index/packages
+[0.373s] copying package.xml -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description
+[0.373s] creating /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/launch
+[0.373s] copying launch/display_launch.py -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/launch
+[0.373s] copying launch/gazebo_spawn_launch.py -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/launch
+[0.373s] creating /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/urdf
+[0.373s] copying urdf/simple_arm.urdf -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/urdf
+[0.373s] copying urdf/simple_arm_moveit.urdf.xacro -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/urdf
+[0.373s] copying urdf/simple_arm.urdf.xacro -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/urdf
+[0.373s] copying urdf/simple_arm.urdf_moveit.xacro -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/urdf
+[0.373s] copying urdf/simple_arm_core.urdf.xacro -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/urdf
+[0.374s] copying urdf/simple_arm_gazebo.ros2_control.xacro -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/urdf
+[0.374s] creating /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/rviz
+[0.374s] copying rviz/urdf.rviz -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/rviz
+[0.381s] creating /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/config
+[0.381s] copying config/controllers.yaml -> /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/share/simple_arm_description/config
+[0.381s] running install_egg_info
+[0.382s] Copying ../../build/simple_arm_description/simple_arm_description.egg-info to /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages/simple_arm_description-0.0.0-py3.10.egg-info
+[0.382s] running install_scripts
+[0.392s] Installing joint_monitor script to /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/simple_arm_description
+[0.392s] Installing state_monitor script to /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/simple_arm_description
+[0.392s] Installing trajectory_publisher script to /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/simple_arm_description
+[0.392s] Installing waypoint_sequencer script to /home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/simple_arm_description
+[0.392s] writing list of installed files to '/home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/install.log'
+[0.404s] Invoked command in '/home/ssu/robotics-practice/class/class09/gazebo_ws/src/simple_arm_description' returned '0': PYTHONPATH=/home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ssu/robotics-practice/class/class09/gazebo_ws/install/simple_arm_description/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simple_arm_description build --build-base /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/build install --record /home/ssu/robotics-practice/class/class09/gazebo_ws/build/simple_arm_description/install.log --single-version-externally-managed install_data
