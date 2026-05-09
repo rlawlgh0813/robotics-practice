@@ -1,4 +1,0 @@
-[console_scripts]
-listener = my_pubsub.my_sub:main
-talker = my_pubsub.my_pub:main
-

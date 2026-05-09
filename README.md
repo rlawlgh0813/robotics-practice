@@ -1,121 +1,74 @@
 # Robotics Practice
 
-ROS 2 기반 로보틱스 프로그래밍을 학습하며 정리한 실습 저장소입니다.
+ROS 2 기반 로보틱스 학습 기록입니다.
+Topic/Service/Action 같은 기본 통신부터 URDF, Gazebo, ros2_control, MoveIt, depth camera, gripper control까지 단계적으로 실습했습니다.
 
-Topic, Service, Action, Launch, Parameter 같은 ROS 2 기본 통신 구조부터 URDF/Xacro, Gazebo, ros2_control, MoveItPy 기반 로봇팔 경로 계획까지 단계적으로 실습했습니다.
+이 저장소는 완성된 제품보다는 **robotics system을 만들기 위해 쌓은 기초 실험과 코드 기록**에 가깝습니다. 이후 [MacGyvBot](https://github.com/MacGyvBot) 프로젝트에서 STT, LLM, GUI, perception, robot control을 하나의 ROS 2 pipeline으로 연결하기 위한 기반 학습입니다.
 
-## Overview
+## Focus
 
-이 저장소는 단순한 수업 기록이 아니라, ROS 2 시스템이 어떻게 여러 노드와 메시지 흐름으로 구성되는지 직접 구현하며 이해하기 위한 학습 기록입니다.
-
-주요 관심사는 다음과 같습니다.
-
-- ROS 2 node 간 통신 구조 이해
-- 시뮬레이션 환경에서 로봇 모델 구성 및 제어
-- 로봇팔 motion planning과 안전 작업 영역 설정
-- 실제 로봇 프로젝트로 확장하기 위한 기초 실습
-
-## What I Practiced
-
-| Area | Practice |
-| --- | --- |
-| ROS 2 Communication | Publisher/Subscriber, Service/Client, Action Server/Client |
-| Runtime Control | Launch system, launch substitution, event handler, dynamic parameter |
-| Robot Description | URDF, Xacro, robot_state_publisher, joint_state_publisher |
-| Simulation | Gazebo spawn, ros2_control, controller loading |
-| Motion Planning | MoveItPy planning, waypoint motion, collision object, Pilz PTP |
-| Manipulation | Doosan M0609 planning practice, OnRobot RG2 gripper, pick-and-place flow |
+- ROS 2 communication: topic, service, action
+- Runtime orchestration: launch, parameter, event handler
+- Robot modeling: URDF, Xacro, TF, robot_state_publisher
+- Simulation/control: Gazebo, ros2_control, trajectory controller
+- Motion planning: MoveIt, FollowJointTrajectory, waypoint motion
+- Perception basics: RealSense depth image, camera intrinsics, pixel-to-3D projection
+- Manipulation practice: Doosan M0609, MoveItPy, OnRobot RG2 gripper
 
 ## Repository Structure
 
 ```text
 robotics-practice/
 ├── class/
-│   ├── class02/   # ROS 2 Topic, pub/sub, turtlesim goal follower
-│   ├── class03/   # Service server/client, custom service workflow
-│   ├── class04/   # Action server/client, turtlesim patrol action
-│   ├── class05/   # Launch, substitution, event handler, parameter control
+│   ├── class02/   # ROS 2 topic, pub/sub, turtlesim goal follower
+│   ├── class03/   # service/client, custom service workflow
+│   ├── class04/   # action server/client, turtlesim patrol action
+│   ├── class05/   # launch, substitution, event handler, parameter
 │   ├── class06/   # URDF, Xacro, robot_state_publisher
-│   ├── class07/   # Gazebo, ros2_control, simple arm simulation
-│   └── class09/   # Additional class notes
+│   ├── class07/   # Gazebo, ros2_control, effort controller
+│   ├── class08/   # joint trajectory controller, waypoint sequence
+│   ├── class09/   # MoveIt config, FollowJointTrajectory action
+│   └── class10/   # RealSense depth viewer, pixel depth to XYZ
 ├── dsr/
 │   └── dsr_practice/
-│       ├── dsr_practice/
-│       │   ├── mp_basic.py
-│       │   ├── mp_waypoint.py
-│       │   ├── mp_waypoint_pilz.py
-│       │   ├── collision_obstacle.py
-│       │   ├── pick_and_place.py
-│       │   ├── gripper.py
-│       │   └── onrobot.py
-│       ├── launch/
-│       └── config/
-└── project/
+│       ├── dsr_practice/   # MoveItPy and gripper practice code
+│       ├── launch/         # example launch files
+│       └── config/         # MoveItPy config
+└── README.md
 ```
 
-## Class Practice
+## Practice Map
 
-### ROS 2 Topic
+| Area | What I built |
+| --- | --- |
+| ROS 2 Topic | Publisher/subscriber nodes and turtlesim feedback control |
+| ROS 2 Service | Basic service/client and custom shopping-order service flow |
+| ROS 2 Action | Fibonacci action and turtlesim waypoint patrol action |
+| Launch / Parameter | Launch arguments, substitutions, process events, dynamic parameters |
+| URDF / Xacro | Simple arm model, reusable xacro macros, TF visualization |
+| Gazebo / ros2_control | Simulated arm spawn, joint state broadcaster, effort controller |
+| Trajectory Control | `JointTrajectory` command publisher and waypoint sequencer |
+| MoveIt | MoveIt config package, controller integration, trajectory action client |
+| Depth Camera | RealSense image subscription, depth reading, camera-coordinate calculation |
+| DSR / Manipulation | Doosan M0609 MoveItPy planning, collision object, RG2 gripper, pick-and-place flow |
 
-Publisher와 Subscriber 노드를 직접 작성하고, turtlesim의 pose와 cmd_vel topic을 이용해 목표 좌표로 이동하는 기본 제어 흐름을 구현했습니다.
+## Class Notes
 
-학습 내용:
+각 class 폴더에는 실습 코드와 `notes.md`를 함께 둡니다.
 
-- Python `rclpy` 기반 node 작성
-- topic publish/subscribe 구조
-- pose feedback을 이용한 velocity command 생성
-- turtlesim 기반 목표 추종 실습
-
-### ROS 2 Service
-
-요청-응답 기반 통신 구조를 이해하기 위해 기본 Service와 custom Service를 구현했습니다.
-
-학습 내용:
-
-- `example_interfaces/srv/AddTwoInts` 기반 service server/client
-- `CheckStock`, `AuthorizePayment`, `PlaceOrder`, `DiscountApply` 같은 custom service 흐름
-- 여러 service를 조합해 하나의 주문 처리 workflow 구성
-
-### ROS 2 Action
-
-실행 시간이 긴 작업을 다루기 위해 Action server/client를 구현했습니다.
-
-학습 내용:
-
-- custom action interface 정의
-- goal, feedback, result 흐름 이해
-- 피보나치 action server/client 구현
-- turtlesim waypoint patrol action 구현
-
-### Launch / Parameter
-
-여러 노드를 함께 실행하고 runtime 설정을 제어하는 launch와 parameter를 실습했습니다.
-
-학습 내용:
-
-- launch file 작성
-- launch substitution과 argument 전달
-- event handler 기반 실행 순서 제어
-- dynamic parameter callback
-- turtlesim mode, speed, enable parameter 제어
-
-### URDF / Xacro / Gazebo
-
-로봇 모델을 정의하고 시뮬레이션 환경에서 동작시키기 위한 기초를 실습했습니다.
-
-학습 내용:
-
-- URDF link, joint, origin, material 구조
-- Xacro property/macro를 이용한 반복 구조 정리
-- robot_state_publisher와 joint_state_publisher
-- Gazebo model spawn
-- ros2_control과 effort controller 설정
+- `class02`: ROS 2 topic과 turtlesim 목표 추종
+- `class03`: service/client와 custom interface
+- `class04`: action server/client와 waypoint patrol
+- `class05`: launch system과 runtime parameter
+- `class06`: URDF/Xacro 기반 robot description
+- `class07`: Gazebo spawn과 ros2_control 적용
+- `class08`: trajectory controller로 joint command 발행
+- `class09`: MoveIt 설정과 FollowJointTrajectory action 사용
+- `class10`: RealSense depth image를 이용한 pixel depth/XYZ 계산
 
 ## DSR / MoveIt Practice
 
-`dsr/dsr_practice`에서는 Doosan M0609 로봇팔을 대상으로 MoveItPy 기반 motion planning 실습을 정리했습니다.
-
-### Implemented Examples
+`dsr/dsr_practice`에서는 Doosan M0609 로봇팔을 대상으로 MoveItPy 기반 motion planning을 실습했습니다.
 
 | File | Description |
 | --- | --- |
@@ -123,33 +76,36 @@ Publisher와 Subscriber 노드를 직접 작성하고, turtlesim의 pose와 cmd_
 | `mp_waypoint.py` | 여러 waypoint를 순차적으로 계획하고 실행 |
 | `mp_waypoint_pilz.py` | Pilz industrial motion planner 기반 PTP waypoint motion |
 | `collision_obstacle.py` | planning scene에 collision object를 추가하고 회피 경로 계획 |
-| `pick_and_place.py` | RG2 gripper와 함께 gear pick-and-place sequence 구성 |
-| `gripper.py`, `onrobot.py` | OnRobot RG2 gripper 제어 실습 |
+| `pick_and_place.py` | RG2 gripper를 포함한 pick-and-place sequence |
+| `gripper.py` | gripper open/close command helper |
+| `onrobot.py` | OnRobot RG2 TCP command wrapper |
+| `gripper_open_close_test.py` | RG2 open/close manual test |
+| `gripper_width_test.py` | RG2 width feedback manual test |
 
-### Focus Points
+## Cleanup Policy
 
-- `MoveItPy` planning component 사용
-- joint goal과 pose goal 기반 motion planning
-- waypoint 기반 순차 이동
-- OMPL / Pilz planner parameter 설정
-- 작업 공간 안전 범위 clamp
-- collision object 추가
-- gripper open/close와 pick-and-place sequence 구성
+이 저장소에는 source code, launch/config, notes만 남기는 방향으로 정리했습니다.
+`build/`, `install/`, `log/`, `__pycache__/` 같은 generated files는 `.gitignore`로 제외합니다.
+
+```bash
+colcon build
+source install/setup.bash
+```
+
+빌드가 필요하면 각 workspace 안에서 위 흐름으로 다시 생성합니다.
 
 ## Environment
 
 - OS: Ubuntu 22.04
 - ROS 2: Humble
 - Language: Python, C++
-- Build Tool: colcon
+- Build tool: colcon
 - Simulation: Gazebo, RViz
-- Robot / Planning: Doosan M0609, MoveItPy
-- Gripper: OnRobot RG2
+- Planning/control: MoveIt, MoveItPy, ros2_control
+- Hardware target/practice: Doosan M0609, OnRobot RG2, RealSense depth camera
 
 ## What This Repository Shows
 
-이 저장소는 ROS 2를 처음부터 사용해 보며 로봇 소프트웨어의 기본 구조를 이해해 가는 과정을 보여줍니다.
+이 레포는 로봇 소프트웨어를 단일 알고리즘이 아니라 여러 node, topic, action, controller, sensor stream이 연결된 **system**으로 이해해 가는 과정을 보여줍니다.
 
-특히 단순히 노드를 실행하는 수준을 넘어, 여러 노드를 launch로 묶고, parameter로 동작을 제어하고, URDF/Gazebo를 통해 로봇 모델을 구성하고, MoveItPy로 로봇팔 경로를 계획하는 흐름까지 확장했습니다.
-
-이후 진행 중인 [MacGyvBot](https://github.com/MacGyvBot) 프로젝트에서 음성 명령, perception, robot arm control을 하나의 ROS 2 pipeline으로 연결하는 기반이 되는 학습 저장소입니다.
+처음에는 ROS 2 communication과 Linux/launch 기반 실행 흐름을 익히고, 이후 Gazebo/MoveIt/perception 실습으로 확장했습니다. 이 흐름은 현재 진행 중인 로봇 프로젝트에서 음성 명령과 LLM, GUI, vision, robot arm control을 하나의 pipeline으로 묶기 위한 기반입니다.

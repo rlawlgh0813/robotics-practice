@@ -1,6 +1,0 @@
-
-bool success
-string status
-string detail
-int32 remaining_stock
-string payment_auth_code

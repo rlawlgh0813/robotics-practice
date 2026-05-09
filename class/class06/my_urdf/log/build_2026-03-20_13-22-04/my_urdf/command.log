@@ -1,4 +1,0 @@
-Invoking command in '/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf -- -j14 -l14
-Invoked command in '/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf -- -j14 -l14
-Invoking command in '/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf
-Invoked command in '/home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ssu/robotics-practice/class/class06/my_urdf/build/my_urdf
