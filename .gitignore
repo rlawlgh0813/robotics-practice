@@ -22,6 +22,3 @@ __pycache__/
 *.db3
 *.log
 *.out
-
-# Locally retained lecture handouts and downloaded archives
-_course_materials/

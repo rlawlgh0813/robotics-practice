@@ -6,15 +6,13 @@
 
 ## Learning Progress
 
-| Topic | Learned Concept | Portfolio Relevance |
+| Class | Topic | Code Evidence |
 | --- | --- | --- |
-| Digital Twin / USD | USD scene graph와 asset 기반 환경 표현 | 로봇과 설비를 재사용 가능한 가상 공정으로 구성 |
-| Asset Import / PhysX | 로봇 및 공장 설비 import, 물리 속성 적용 | 충돌과 동작을 고려한 simulation environment 구축 |
-| Factory Environment | 공정 설비 배치와 물리 적용 | manipulation 작업 공간 설계 및 검증 |
-| OmniGraph | graph 기반 동작/데이터 흐름 구성 | 센서-제어 pipeline 자동화 |
-| Python Scripting API | Python 기반 scene 및 robot automation | 반복 가능한 시뮬레이션 실험 작성 |
-| Camera Sensor | pinhole/fisheye camera, depth camera 개념 | vision/perception 알고리즘 입력 생성 |
-| LiDAR / IMU / Contact Sensor | 거리, 자세, 접촉 데이터 생성 | navigation 및 조작 task의 상태 관측 |
+| Class 01 | Digital Twin / USD, factory environment | concept note |
+| Class 02 | Asset import, PhysX, OmniGraph | import/physics workflow note |
+| Class 03 | Python Scripting API | USD prim, robot/wheeled robot examples |
+| Class 04 | Process Automation | Franka manipulator and pick-place examples |
+| Class 05 | Virtual Sensors | camera, fisheye/pinhole, RTX LiDAR, contact sensor scripts |
 
 ## Course Sequence Summary
 
@@ -50,6 +48,6 @@
 - synthetic camera/depth 결과를 ROS 2 perception node와 연결
 - motion planning 결과와 contact/collision 상태를 함께 기록하는 검증 pipeline 구성
 
-## Publishing Note
+## Class Notes
 
-강의 원본 문서 및 배포 압축파일은 로컬 참고자료로 보존하고, 공개 저장소에는 학습 내용을 재구성한 본 노트와 직접 작성한 실습 결과를 중심으로 관리합니다.
+상세 학습 기록과 제공된 실습 코드는 `class01`부터 `class05`까지 수업 순서대로 정리했습니다.

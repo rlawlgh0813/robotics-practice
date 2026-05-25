@@ -30,3 +30,7 @@ Doosan M0609 협동로봇과 OnRobot RG2 gripper를 대상으로, ROS 2와 MoveI
 - Depth camera와 OpenCV, calibration 수업을 통해 perception 좌표를 manipulation target으로 변환하는 과정을 학습했습니다.
 - STT-로봇 연동 수업을 통해 음성 명령을 로봇 task 호출로 연결하는 응용 방향을 살펴보았습니다.
 - 이 흐름은 센서 기반 물체 선택, 자연어/음성 명령, 로봇 팔 동작을 하나의 ROS 2 pipeline으로 엮는 프로젝트로 확장할 수 있습니다.
+
+## Related Classes
+
+실습 진도별 코드 스냅샷과 노트는 `ros2/class11`(MoveItPy/pick-and-place), `ros2/class12`(depth/calibration/click pick), `ros2/class13`(STT 및 bar sorting)에 정리했습니다.

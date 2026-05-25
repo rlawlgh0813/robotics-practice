@@ -17,6 +17,9 @@ ROS 2의 통신 구조부터 시뮬레이션 로봇의 궤적 제어와 depth pe
 | Class 08 | Trajectory | `JointTrajectory` 기반 waypoint 제어 |
 | Class 09 | MoveIt | MoveIt config와 `FollowJointTrajectory` action 연결 |
 | Class 10 | Depth Camera | image/depth topic 구독 및 pixel-to-3D 계산 |
+| Class 11 | Doosan / MoveItPy | waypoint, collision avoidance, gripper, pick-and-place 실습 |
+| Class 12 | Vision Manipulation | depth calibration과 camera click 기반 pick task 연결 |
+| Class 13 | Voice / Task Automation | STT 명령 제어와 bar sorting 응용 task 구성 |
 
 ## What I Implemented
 
@@ -37,6 +40,12 @@ ROS 2의 통신 구조부터 시뮬레이션 로봇의 궤적 제어와 depth pe
 - 카메라 내부 파라미터 `fx`, `fy`, `cx`, `cy`와 depth 값을 이용해 클릭한 pixel의 camera coordinate `(X, Y, Z)`를 산출했습니다.
 - 추가 학습 자료로 depth camera calibration과 OpenCV 연계 흐름을 확인하여, 인식 기반 pick-and-place로 이어질 기반을 정리했습니다.
 
-## Connection to Next Tracks
+### Manipulation and Interaction
 
-ROS 2에서 학습한 message/action/controller 구조는 `dsr/`의 실제 협동로봇 manipulation 실습으로 이어집니다. Gazebo에서 다진 시뮬레이션 경험은 `isaacsim/`에서 USD/PhysX와 고품질 가상 센서를 활용하는 digital twin 학습으로 확장됩니다.
+- `class11`에서 Doosan M0609, MoveItPy, OnRobot RG2를 이용한 경로 계획과 pick-and-place를 다뤘습니다.
+- `class12`에서는 calibration 결과와 depth/camera 입력을 robot pick 위치에 연결했습니다.
+- `class13`에서는 음성 명령과 vision 기반 bar sorting으로 task-level robot control을 확장했습니다.
+
+## Connection to Isaac Sim
+
+Gazebo와 실제 센서/협동로봇 실습 경험은 `isaacsim/`에서 USD/PhysX와 가상 센서 기반 digital twin을 구성하는 학습으로 이어집니다.
