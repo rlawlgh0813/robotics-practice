@@ -1,111 +1,62 @@
 # Robotics Practice
 
-ROS 2 기반 로보틱스 학습 기록입니다.
-Topic/Service/Action 같은 기본 통신부터 URDF, Gazebo, ros2_control, MoveIt, depth camera, gripper control까지 단계적으로 실습했습니다.
+ROS 2에서 시작해 로봇 모델링, 시뮬레이션, 모션 플래닝, 센서 처리, 그리고 Isaac Sim 기반 디지털 트윈으로 학습 범위를 넓혀 가는 기록입니다.
 
-이 저장소는 완성된 제품보다는 **robotics system을 만들기 위해 쌓은 기초 실험과 코드 기록**에 가깝습니다. 이후 [MacGyvBot](https://github.com/MacGyvBot) 프로젝트에서 STT, LLM, GUI, perception, robot control을 하나의 ROS 2 pipeline으로 연결하기 위한 기반 학습입니다.
+이 저장소는 로봇 소프트웨어 시스템을 이해하기 위해 직접 구현하고 실습한 코드와 학습 노트를 정리한 포트폴리오입니다. Topic/Service/Action 통신을 바탕으로 Gazebo와 MoveIt에서 로봇을 제어하고, Depth Camera 및 Isaac Sim 센서/공정 환경으로 perception과 digital twin 영역까지 확장하고 있습니다.
 
-## Focus
+## Learning Roadmap
 
-- ROS 2 communication: topic, service, action
-- Runtime orchestration: launch, parameter, event handler
-- Robot modeling: URDF, Xacro, TF, robot_state_publisher
-- Simulation/control: Gazebo, ros2_control, trajectory controller
-- Motion planning: MoveIt, FollowJointTrajectory, waypoint motion
-- Perception basics: RealSense depth image, camera intrinsics, pixel-to-3D projection
-- Manipulation practice: Doosan M0609, MoveItPy, OnRobot RG2 gripper
+| Track | Learning Focus | Evidence |
+| --- | --- | --- |
+| ROS 2 Fundamentals | Topic, Service, Action, Launch, Parameter | [`ros2/note.md`](ros2/note.md), `ros2/class02` - `class05` |
+| Robot Model & Simulation | URDF, Xacro, Gazebo, ros2_control | `ros2/class06` - `class08` |
+| Planning & Perception | MoveIt, FollowJointTrajectory, RealSense depth | `ros2/class09` - `class10` |
+| Manipulation | Doosan M0609, MoveItPy, OnRobot RG2, pick-and-place | [`dsr/note.md`](dsr/note.md), `dsr/dsr_practice` |
+| Digital Twin | USD, PhysX, OmniGraph, Isaac Sim scripting and sensors | [`isaacsim/note.md`](isaacsim/note.md) |
 
 ## Repository Structure
 
 ```text
 robotics-practice/
-├── class/
-│   ├── class02/   # ROS 2 topic, pub/sub, turtlesim goal follower
-│   ├── class03/   # service/client, custom service workflow
-│   ├── class04/   # action server/client, turtlesim patrol action
-│   ├── class05/   # launch, substitution, event handler, parameter
-│   ├── class06/   # URDF, Xacro, robot_state_publisher
-│   ├── class07/   # Gazebo, ros2_control, effort controller
-│   ├── class08/   # joint trajectory controller, waypoint sequence
-│   ├── class09/   # MoveIt config, FollowJointTrajectory action
-│   └── class10/   # RealSense depth viewer, pixel depth to XYZ
-├── dsr/
-│   └── dsr_practice/
-│       ├── dsr_practice/   # MoveItPy and gripper practice code
-│       ├── launch/         # example launch files
-│       └── config/         # MoveItPy config
-└── README.md
+|-- ros2/
+|   |-- note.md       # ROS 2 학습 흐름 요약
+|   `-- class02-10/   # 통신, 모델링, 제어, MoveIt, depth 실습 코드/노트
+|-- dsr/
+|   |-- note.md       # 협동로봇 조작 및 응용 학습 요약
+|   `-- dsr_practice/ # Doosan/MoveItPy/그리퍼 실습 코드
+|-- isaacsim/
+|   `-- note.md       # Isaac Sim 디지털 트윈 및 센서 학습 정리
+`-- README.md
 ```
 
-## Practice Map
+## Highlights
 
-| Area | What I built |
-| --- | --- |
-| ROS 2 Topic | Publisher/subscriber nodes and turtlesim feedback control |
-| ROS 2 Service | Basic service/client and custom shopping-order service flow |
-| ROS 2 Action | Fibonacci action and turtlesim waypoint patrol action |
-| Launch / Parameter | Launch arguments, substitutions, process events, dynamic parameters |
-| URDF / Xacro | Simple arm model, reusable xacro macros, TF visualization |
-| Gazebo / ros2_control | Simulated arm spawn, joint state broadcaster, effort controller |
-| Trajectory Control | `JointTrajectory` command publisher and waypoint sequencer |
-| MoveIt | MoveIt config package, controller integration, trajectory action client |
-| Depth Camera | RealSense image subscription, depth reading, camera-coordinate calculation |
-| DSR / Manipulation | Doosan M0609 MoveItPy planning, collision object, RG2 gripper, pick-and-place flow |
+### ROS 2 to Motion Planning
 
-## Class Notes
+- Publisher/subscriber, service/client, action server/client를 직접 구성하며 ROS 2 node 간 통신 방식을 실습했습니다.
+- URDF/Xacro 모델을 Gazebo에 올리고 `ros2_control` 및 trajectory controller로 관절 동작을 제어했습니다.
+- MoveIt config와 `FollowJointTrajectory` action을 연결해 계획된 waypoint motion으로 확장했습니다.
 
-각 class 폴더에는 실습 코드와 `notes.md`를 함께 둡니다.
+### Perception and Manipulation
 
-- `class02`: ROS 2 topic과 turtlesim 목표 추종
-- `class03`: service/client와 custom interface
-- `class04`: action server/client와 waypoint patrol
-- `class05`: launch system과 runtime parameter
-- `class06`: URDF/Xacro 기반 robot description
-- `class07`: Gazebo spawn과 ros2_control 적용
-- `class08`: trajectory controller로 joint command 발행
-- `class09`: MoveIt 설정과 FollowJointTrajectory action 사용
-- `class10`: RealSense depth image를 이용한 pixel depth/XYZ 계산
+- RealSense color/depth image를 구독하고 pixel depth와 camera intrinsics를 이용해 3D 좌표를 계산했습니다.
+- Doosan M0609와 OnRobot RG2 환경에서 MoveItPy 기반 경로 계획, 충돌 회피, pick-and-place 흐름을 실습했습니다.
+- Depth camera 및 calibration 학습을 통해 향후 인식 결과를 manipulation에 연결하는 기반을 다졌습니다.
 
-## DSR / MoveIt Practice
+### Isaac Sim Progress
 
-`dsr/dsr_practice`에서는 Doosan M0609 로봇팔을 대상으로 MoveItPy 기반 motion planning을 실습했습니다.
-
-| File | Description |
-| --- | --- |
-| `mp_basic.py` | HOME joint pose 이동 후 end-effector pose goal로 이동 |
-| `mp_waypoint.py` | 여러 waypoint를 순차적으로 계획하고 실행 |
-| `mp_waypoint_pilz.py` | Pilz industrial motion planner 기반 PTP waypoint motion |
-| `collision_obstacle.py` | planning scene에 collision object를 추가하고 회피 경로 계획 |
-| `pick_and_place.py` | RG2 gripper를 포함한 pick-and-place sequence |
-| `gripper.py` | gripper open/close command helper |
-| `onrobot.py` | OnRobot RG2 TCP command wrapper |
-| `gripper_open_close_test.py` | RG2 open/close manual test |
-| `gripper_width_test.py` | RG2 width feedback manual test |
-
-## Cleanup Policy
-
-이 저장소에는 source code, launch/config, notes만 남기는 방향으로 정리했습니다.
-`build/`, `install/`, `log/`, `__pycache__/` 같은 generated files는 `.gitignore`로 제외합니다.
-
-```bash
-colcon build
-source install/setup.bash
-```
-
-빌드가 필요하면 각 workspace 안에서 위 흐름으로 다시 생성합니다.
+- USD 기반 scene 구성, PhysX 물리 적용, 공정 설비 및 로봇 import 개념을 학습했습니다.
+- OmniGraph 및 Python scripting API를 이용한 자동화 흐름과 Isaac Sim camera, LiDAR, IMU, contact sensor 활용 방식을 정리했습니다.
+- 기존 Gazebo/MoveIt 학습을 고품질 센서 시뮬레이션과 digital twin 기반 공정 검증으로 확장하는 단계입니다.
 
 ## Environment
 
-- OS: Ubuntu 22.04
-- ROS 2: Humble
-- Language: Python, C++
-- Build tool: colcon
-- Simulation: Gazebo, RViz
-- Planning/control: MoveIt, MoveItPy, ros2_control
-- Hardware target/practice: Doosan M0609, OnRobot RG2, RealSense depth camera
+- ROS 2 Humble / Ubuntu 22.04
+- Python, ROS 2 package, colcon
+- Gazebo, RViz, ros2_control, MoveIt / MoveItPy
+- Doosan M0609, OnRobot RG2, RealSense Depth Camera
+- NVIDIA Isaac Sim: USD, PhysX, OmniGraph, sensor simulation
 
-## What This Repository Shows
+## Repository Policy
 
-이 레포는 로봇 소프트웨어를 단일 알고리즘이 아니라 여러 node, topic, action, controller, sensor stream이 연결된 **system**으로 이해해 가는 과정을 보여줍니다.
-
-처음에는 ROS 2 communication과 Linux/launch 기반 실행 흐름을 익히고, 이후 Gazebo/MoveIt/perception 실습으로 확장했습니다. 이 흐름은 현재 진행 중인 로봇 프로젝트에서 음성 명령과 LLM, GUI, vision, robot arm control을 하나의 pipeline으로 묶기 위한 기반입니다.
+이 저장소에는 직접 실습한 소스 코드와 학습 내용을 재구성한 노트를 중심으로 게시합니다. 강의 원본 PDF, 배포용 압축파일, 생성 산출물(`build/`, `install/`, `log/`)은 공개 소스에서 제외합니다.
